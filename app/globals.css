@@ -1,27 +1,122 @@
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box
+}
+:root {
+  font-size: 16px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 900
+}
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@layer base {
+  section {
+    @apply pt-0 pb-20 lg:py-16;
+  }
+  h1 {
+    @apply font-heading text-[28px] sm:text-[30px] md:text-[436px] lg:text-[40px] xl:text-[42px] leading-10 sm:leading-8 lg:leading-[1.5] text-heading-color xl:leading-[3rem] font-bold mb-8 mt-4;
+  }
+  h2 {
+    @apply font-heading text-[22px] sm:text-[26px] md:text-[28px] lg:text-[30px] xl:text-[34px] leading-10 sm:leading-8 lg:leading-[1.5] text-heading-color xl:leading-[3.2rem] font-bold my-5;
+  }
+  h3 {
+    @apply font-heading text-[22px] sm:text-[24px] md:text-[28px] lg:text-[30px] xl:text-[32px] leading-10 sm:leading-5 lg:leading-[1.3] text-heading-color xl:leading-[2.5rem] font-bold my-5;
+  }
+  h4 {
+    @apply font-heading text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] leading-10 sm:leading-8 lg:leading-[1.5] text-heading-color xl:leading-[2.3rem] font-bold mb-8;
+  }
+  h5 {
+    @apply font-heading text-[14px] sm:text-[16px] md:text-[18px] leading-10 sm:leading-8 lg:leading-[1.5] text-heading-color xl:leading-[2.3rem] font-bold mb-8;
+  }
+  p {
+    @apply text-[18px] text-content-color font-medium leading-8 mb-0 block;
+  }
+  li {
+    @apply text-[20px] text-content-color font-normal leading-8;
+  }
+  label {
+    @apply font-bold text-heading-color text-xl block mb-2;
+  }
+  input, select, textarea {
+    @apply border border-gray-300 rounded-md px-3 py-3 text-heading-color text-lg outline-gray-300;
+  }
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer components {
+  .btn {
+    @apply px-[28px] pt-[15px] pb-[16px] text-[17px] font-semibold rounded-full text-white;
+  }
+  .btn-primary {
+    @apply bg-button-gradient;
+  }
+  .btn-secondary {
+    @apply bg-white text-black;
+  }
+  .btn-primary-outlined {
+    @apply bg-transparent border border-primary-color text-primary-color;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .error {
+    color: rgb(229, 17, 17);
+    font-size: 16px;
+  }
+  .up-anim {
+    animation: up-animation 8s ease infinite;
+    position: absolute;
+    top: 20%;
+    left: 0%;
+  }
+  .zoom-box {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.2);
+    width: 100px;
+    height: 100px;
+    background-color: #5E36F2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #f3f3f3;
+    animation: zoom-in-out 5s ease-in-out infinite;
+  }
+  @keyframes up-animation {
+    0% {
+      transform: translatey(-50%);
+    }
+    20% {
+      transform: translateX(-70px);
+    }
+    50% {
+      transform: translatey(-70px);
+    }
+    100% {
+      transform: translatey(-50%);
+    }
+  }
+  @keyframes zoom-in-out {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.3);
+    }
   }
 }
+
+

@@ -8,8 +8,21 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        "primary-color": '#e11616',
+        "heading-color": '#000424',
+        "content-color": '#767676'
+      },
+      backgroundImage: {
+        'button-gradient': 'linear-gradient(90deg, #f54bff, #5E36F2)',
+        'topbar-gradient': 'linear-gradient(117deg,#fef0f8 14.35%,#dacfff 84.4%)'
+      },
+      fontFamily: {
+        heading: ['Poppins', 'sans-serif'],
+      },
+      boxShadow: {
+        'main-shadow': '0px 0px 30px rgba(0,0,0,0.12)',
+        'light-shadow': '0px 0px 30px rgba(0,0,0,0.067)',
+        'dark-shadow': '0px 0px 20px rgba(0,0,0,0.4)',
       },
     },
   },
