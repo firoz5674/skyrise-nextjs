@@ -7,7 +7,7 @@ import logo from "../assets/images/logo.png";
 
 const DesktopHeader = () => {
   return (
-    <header className='bg-white py-5 px-14'>
+    <header className='bg-white py-5 px-14 hidden lg:block'>
       <nav className='flex justify-between items-center'>
         <Image src={logo} className='w-[210px]' priority alt='' />
         <ul className='flex items-center'>
