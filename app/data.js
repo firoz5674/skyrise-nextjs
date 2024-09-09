@@ -7,6 +7,9 @@ import service6 from "./assets/images/garden.png";
 import service7 from "./assets/images/color.png";
 import service8 from "./assets/images/timeline.png";
 
+import bgLine from "./assets/images/common/bg-line.png";
+import bgLine2 from "./assets/images/common/bg-line2.png";
+
 export const NAV_MENU = [
   {
     id: 1,
@@ -72,5 +75,20 @@ export const bannerServiceImages = [
   {
     id: 8,
     img: service8
+  },
+]
+
+export const twoCardsData = [
+  {
+    id: 1,
+    bgImage: bgLine,
+    cardTitle: 'Lorem ipsum dolor sit amet',
+    cardDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius esse magni alias? Sapiente officiis incidunt, similique quia quasi nostrum architecto quaerat, veritatis quo aut deleniti.'
+  },
+  {
+    id: 2,
+    bgImage: bgLine2,
+    cardTitle: 'Lorem ipsum dolor sit amet',
+    cardDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius esse magni alias? Sapiente officiis incidunt, similique quia quasi nostrum architecto quaerat, veritatis quo aut deleniti.'
   },
 ]

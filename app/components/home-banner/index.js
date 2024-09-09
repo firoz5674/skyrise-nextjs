@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import bannerBg from "../../assets/images/home/banner-bg.png";
 import Link from "next/link";
-import banner from "../../assets/images/home/banner1.png";
+import banner from "../../assets/images/home/banner.png";
 import { bannerServiceImages } from "@/app/data";
 import service1 from "../../assets/images/building.png";
 
@@ -61,7 +61,7 @@ const HomeBanner = () => {
               alt=""
               priority
             />
-            <div className="zoom-box hidden lg:block">
+            <div className="zoom-box hidden lg:flex">
               <p className=" text-white">Since</p>
               <h4 className="text-white mb-0">1998</h4>
             </div>
