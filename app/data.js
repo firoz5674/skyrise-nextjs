@@ -123,3 +123,44 @@ export const flowerGrid = [
     bgColor: '#d0fbfe'
   },
 ]
+
+
+export const serviceCard = [
+  {
+    id: 1,
+    img: service5,
+    subTitle: 'Structural Engineering',
+    desc: 'Ensuring the structural integrity and safety of buildings through meticulous engineering and design expertise.'
+  },
+  {
+    id: 2,
+    img: service3,
+    subTitle: 'Office Interior',
+    desc: 'Designing and furnishing office interiors to promote productivity, collaboration, and employee well-being.'
+  },
+  {
+    id: 3,
+    img: service1,
+    subTitle: 'Building Construction',
+    desc: 'Crafting sturdy, innovative structures meticulously tailored to your unique vision, preferences, and functional requirements.'
+  },
+  {
+    id: 4,
+    img: service3,
+    subTitle: 'Custom Furnishing',
+    desc: 'Elevating interiors with bespoke furniture pieces, adding personality and charm to every corner.'
+  },
+  {
+    id: 5,
+    img: service7,
+    subTitle: 'Color Consultation',
+    desc: 'Choosing the perfect color palette to evoke the desired ambiance and reflect your personality.'
+  },
+  {
+    id: 6,
+    img: service2,
+    subTitle: 'Renovation & Remodeling',
+    desc: 'Revitalize your space with expert renovation and remodeling solutions, enhancing both aesthetics and functionality.'
+  },
+]
+

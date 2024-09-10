@@ -15,7 +15,8 @@ module.exports = {
       },
       backgroundImage: {
         'button-gradient': 'linear-gradient(90deg, #f54bff, #5E36F2)',
-        'topbar-gradient': 'linear-gradient(117deg,#fef0f8 14.35%,#dacfff 84.4%)'
+        'topbar-gradient': 'linear-gradient(117deg,#fef0f8 14.35%,#dacfff 84.4%)',
+        'card-gradient': 'linear-gradient(117deg,#fff2f9 14.01%,#f2eeff 120.85%)'
       },
       fontFamily: {
         heading: ['Poppins', 'sans-serif'],
