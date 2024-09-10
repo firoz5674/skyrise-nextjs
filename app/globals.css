@@ -131,6 +131,17 @@ body {
   .flower-circle {
     animation: zoom-in-out 5s ease-in-out infinite;
   }
+  .cta::before {
+    position: absolute;
+    content: '';
+    background: url("./assets/images/cta-line.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 }
 
 

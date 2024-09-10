@@ -1,10 +1,18 @@
 import { flowerGrid } from "@/app/data";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import featurePattern from "../../assets/images/flower-left-pattern.png"
 
 const FlowerDesign = () => {
   return (
-    <section className="py-[100px] relative flower-design">
+    <section className="py-[120px] relative flower-design">
+      <Image
+        src={featurePattern}
+        className="w-1/2 h-full absolute top-[0%] object-cover z-[-1] translate-y-[0%]"
+        priority
+        alt=""
+      />
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
           <div className="col-span-1 lg:col-span-6 relative">

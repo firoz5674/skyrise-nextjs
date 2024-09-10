@@ -1,4 +1,5 @@
 import AboutSection from "./components/about-section";
+import CallToAction from "./components/call-to-action";
 import FlowerDesign from "./components/flower-design";
 import HomeBanner from "./components/home-banner";
 import TopFeatures from "./components/top-features";
@@ -9,9 +10,10 @@ export default function Home() {
     <main>
       <HomeBanner />
       <AboutSection />
-      <TwoCards />
       <TopFeatures />
+      <TwoCards />
       <FlowerDesign />
+      <CallToAction />
     </main>
   );
 }
