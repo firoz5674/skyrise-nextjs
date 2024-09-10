@@ -49,7 +49,7 @@ body {
     @apply font-bold text-heading-color text-xl block mb-2;
   }
   input, select, textarea {
-    @apply border border-gray-300 rounded-md px-3 py-3 text-heading-color text-lg outline-gray-300;
+    @apply border border-gray-300 rounded-md px-3 py-3 font-medium text-content-color text-lg outline-gray-300;
   }
 }
 @layer components {
