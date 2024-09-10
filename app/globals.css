@@ -28,7 +28,7 @@ body {
     @apply font-heading text-[28px] sm:text-[30px] md:text-[436px] lg:text-[40px] xl:text-[42px] leading-10 sm:leading-8 lg:leading-[1.5] text-heading-color xl:leading-[3rem] font-bold mb-8 mt-4;
   }
   h2 {
-    @apply font-heading text-[24px] sm:text-[28px] md:text-[32px] lg:text-[38px] xl:text-[44px] leading-10 sm:leading-8 lg:leading-[1.5] text-heading-color xl:leading-[3.2rem] font-bold my-5;
+    @apply font-heading text-[24px] sm:text-[28px] md:text-[32px] lg:text-[38px] xl:text-[44px] leading-10 sm:leading-8 lg:leading-[1.5] text-heading-color xl:leading-[3.6rem] font-bold my-5;
   }
   h3 {
     @apply font-heading text-[22px] sm:text-[24px] md:text-[28px] lg:text-[30px] xl:text-[32px] leading-10 sm:leading-5 lg:leading-[1.3] text-heading-color xl:leading-[2.5rem] font-bold my-5;
@@ -40,7 +40,7 @@ body {
     @apply font-heading text-[14px] sm:text-[16px] md:text-[18px] leading-10 sm:leading-8 lg:leading-[1.5] text-heading-color xl:leading-[2.3rem] font-bold mb-8;
   }
   p {
-    @apply text-[18px] text-content-color font-medium leading-8 mb-0 block;
+    @apply text-[20px] text-content-color font-normal leading-8 mb-0 block;
   }
   li {
     @apply text-[20px] text-content-color font-normal leading-8;
@@ -54,7 +54,7 @@ body {
 }
 @layer components {
   .btn {
-    @apply px-[28px] pt-[15px] pb-[16px] text-[17px] font-semibold rounded-full text-white;
+    @apply px-[32px] pt-[17px] pb-[18px] text-[17px] font-semibold rounded-full text-white;
   }
   .btn-primary {
     @apply bg-button-gradient;
@@ -116,6 +116,20 @@ body {
     50% {
       transform: scale(1.3);
     }
+  }
+  .flower-design::before {
+    position: absolute;
+    content: "";
+    width: 750px;
+    height: 613px;
+    background: linear-gradient(152deg, hsla(0, 0%, 96%, .2) 17.12%, rgba(242, 5, 135, .2) 105.91%);
+    filter: blur(100px);
+    right: 200px;
+    top: 120px;
+    z-index: -1;
+  }
+  .flower-circle {
+    animation: zoom-in-out 5s ease-in-out infinite;
   }
 }
 

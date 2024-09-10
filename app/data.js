@@ -92,3 +92,34 @@ export const twoCardsData = [
     cardDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius esse magni alias? Sapiente officiis incidunt, similique quia quasi nostrum architecto quaerat, veritatis quo aut deleniti.'
   },
 ]
+
+export const flowerGrid = [
+  {
+    id: 1,
+    text1: 'Total Projects Delivered',
+    text2: '600+',
+    borderRadius: '0 50% 0 50%',
+    bgColor: '#fdfbeb'
+  },
+  {
+    id: 2,
+    text1: 'Total Projects Delivered',
+    text2: '600+',
+    borderRadius: '50% 0 50% 0',
+    bgColor: '#dad1fd'
+  },
+  {
+    id: 3,
+    text1: 'Total Projects Delivered',
+    text2: '600+',
+    borderRadius: '50% 0 50% 0',
+    bgColor: '#fdcdf8'
+  },
+  {
+    id: 4,
+    text1: 'Total Projects Delivered',
+    text2: '600+',
+    borderRadius: '0 50% 0 50%',
+    bgColor: '#d0fbfe'
+  },
+]

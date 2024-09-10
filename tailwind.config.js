@@ -10,7 +10,7 @@ module.exports = {
       colors: {
         "primary-color": '#e11616',
         "heading-color": '#000424',
-        "content-color": '#767676'
+        "content-color": '#626262'
       },
       backgroundImage: {
         'button-gradient': 'linear-gradient(90deg, #f54bff, #5E36F2)',

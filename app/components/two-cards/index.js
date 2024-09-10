@@ -2,13 +2,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import bgLine from "../../assets/images/common/bg-line.png";
-import bgLine2 from "../../assets/images/common/bg-line2.png";
 import { twoCardsData } from '@/app/data';
 
 const TwoCards = () => {
   return (
-    <section>
+    <section className='pb-[120px]'>
       <div className='container mx-auto px-4'>
         <h2 className='text-center mb-20'>Lorem ipsum dolor sit</h2>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-6'>
@@ -22,7 +20,6 @@ const TwoCards = () => {
               </div>
             )
           })}
-          
         </div>
       </div>
     </section>
