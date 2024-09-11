@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import featureBg from "../../assets/images/common/feature-bg2.png";
 import spiderLeft from "../../assets/images/common/spider-left.png";
-import feature1 from "../../assets/images/feature1.jpg";
+import feature1 from "../../assets/images/feature1.webp";
 import feature2 from "../../assets/images/feature2.jpg";
 import feature3 from "../../assets/images/feature3.jpg";
 import feature4 from "../../assets/images/feature4.jpg";
