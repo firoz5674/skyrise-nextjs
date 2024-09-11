@@ -14,7 +14,7 @@ export default function Home() {
       <AboutSection />
       <TopFeatures />
       <ServiceCard title="Our Services" />
-      <TwoCards />
+      <TwoCards title="Innovative Designs, Solid Construction: Your Perfect Space Awaits" />
       <FlowerDesign />
       <CallToAction />
       <HomeContact />

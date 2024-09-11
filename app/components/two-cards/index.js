@@ -7,11 +7,11 @@ import spiralImg from "../../assets/images/spiral.png";
 import girlImg from "../../assets/images/girl.png";
 import arrowImg from "../../assets/images/arrow.png";
 
-const TwoCards = () => {
+const TwoCards = ({title}) => {
   return (
     <section className='pb-[120px]'>
       <div className='container mx-auto px-4'>
-        <h2 className='text-center mb-20'>Lorem ipsum dolor sit</h2>
+        <h2 className='text-center mb-20 px-0 lg:px-[20%]'>{title}</h2>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6'>
           {twoCardsData.map((card, index) => {
             return (
