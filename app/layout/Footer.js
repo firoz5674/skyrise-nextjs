@@ -72,7 +72,7 @@ const Footer = () => {
           </div>
         </div>
       </section>
-      <section className='bg-[#030106] py-6 text-center'>
+      <section className='bg-[#030106] py-6 px-4 text-center'>
         <p className='text-[16px] text-white opacity-80'>&copy; {year} All Rights Reserved | Skyrise Construction & Interiors</p>
       </section>
     </>

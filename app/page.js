@@ -17,7 +17,7 @@ export default function Home() {
       <TwoCards title="Innovative Designs, Solid Construction: Your Perfect Space Awaits" />
       <FlowerDesign />
       <CallToAction />
-      <HomeContact />
+      <HomeContact /> 
     </main>
   );
 }

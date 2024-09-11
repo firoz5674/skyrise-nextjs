@@ -24,7 +24,7 @@ const TwoCards = ({title}) => {
             )
           })}
         </div>
-        <div className='bg-[#ffeff4] relative z-[1] rounded-2xl px-4  py-16 lg:py-8 two-cards-cta'>
+        <div className='bg-[#ffeff4] relative z-[1] rounded-2xl px-4 py-16 lg:py-8 two-cards-cta'>
         <Image src={spiralImg} className='absolute right-0 z-[-1]' priority alt="" />
           <div className='grid grid-cols-1 lg:grid-cols-2 place-items-center'>
             <div>
