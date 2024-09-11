@@ -3,13 +3,16 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { twoCardsData } from '@/app/data';
+import spiralImg from "../../assets/images/spiral.png";
+import girlImg from "../../assets/images/girl.png";
+import arrowImg from "../../assets/images/arrow.png";
 
 const TwoCards = () => {
   return (
     <section className='pb-[120px]'>
       <div className='container mx-auto px-4'>
         <h2 className='text-center mb-20'>Lorem ipsum dolor sit</h2>
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-6'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6'>
           {twoCardsData.map((card, index) => {
             return (
               <div className={`rounded-2xl relative ${index === 0 ? 'bg-[#f3ebff]' : 'bg-[#ffcbe7]'}  pt-10 pb-20 px-14 z-10`} key={card}>
@@ -20,6 +23,19 @@ const TwoCards = () => {
               </div>
             )
           })}
+        </div>
+        <div className='bg-[#ffeff4] relative z-[1] rounded-2xl px-4  py-8 two-cards-cta'>
+        <Image src={spiralImg} className='absolute right-0 z-[-1]' priority alt="" />
+          <div className='grid grid-cols-1 lg:grid-cols-2 place-items-center'>
+            <div>
+              <Image src={girlImg} className='' priority alt="" />
+            </div>
+            <div>
+              <h3>Don&apos;t Talk On a Call</h3>
+              <p className='mb-12'>Just leave us a mail, W&apos;ll get back you soon</p>
+              <Link href="mailto:skyrise30@gmail.com" className='btn btn-black pt-[19px] pb-[20px]' target='_blank'>skyrise30@gmail.com</Link>
+            </div>
+          </div>
         </div>
       </div>
     </section>

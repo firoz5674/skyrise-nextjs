@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const HomeContact = () => {
   return (
-    <section>
+    <section className="pt-[80px] pb-[120px]">
       <div className="container mx-auto px-4">
         <h2 className="text-center mb-16 px-0 lg:px-[24%]">
           Want to hire us to boost site contact us any time!

@@ -38,7 +38,7 @@ const FlowerDesign = () => {
             </div>
           </div>
           <div className="col-span-1 lg:col-span-5">
-            <div className="ml-[30px] flex justify-center items-start flex-col h-full">
+            <div className="ml-0 lg:ml-[60px] flex justify-center items-start flex-col h-full">
               <h2>Our Top Designs</h2>
               <p className="mb-10">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.

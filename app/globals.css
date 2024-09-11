@@ -59,6 +59,9 @@ body {
   .btn-primary {
     @apply bg-button-gradient;
   }
+  .btn-black {
+    @apply bg-black text-white hover:bg-transparent hover:border-2 hover:border-black hover:text-black hover:transition-all hover:ease-in-out duration-500;
+  }
   .btn-secondary {
     @apply bg-white text-black;
   }
@@ -93,6 +96,26 @@ body {
     flex-direction: column;
     align-items: center;
     border: 1px solid #f3f3f3;
+    animation: zoom-in-out 5s ease-in-out infinite;
+  }
+  .glitter1 {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.2);
+    width: 200px;
+    height: 200px;
+    animation: zoom-in-out 5s ease-in-out infinite;
+  }
+  .glitter2 {
+    position: absolute;
+    top: 67%;
+    left: 78%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.2);
+    width: 200px;
+    height: 200px;
     animation: zoom-in-out 5s ease-in-out infinite;
   }
   @keyframes up-animation {
@@ -141,6 +164,18 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
+  }
+  .two-cards-cta::before {
+    content: '';
+    position: absolute;
+    border-radius: 400px;
+    width: 290px;
+    height: 290px;
+    transform: rotate(50deg);
+    background-color: rgba(255,80,143,.3);
+    filter: blur(80px);
+    top: 30%;
+    left: 15%;
   }
 }
 

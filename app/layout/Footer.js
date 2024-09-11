@@ -4,13 +4,20 @@ import logo from "../assets/images/logo.png";
 import Image from 'next/image';
 import Link from 'next/link';
 import ChevRight from '../components/svg-icons/chev-right';
+import footerGlitter from "../assets/images/footer-glitter.png"
 
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <>
-      <section className='bg-[#150d28] py-16'>
+      <section className='bg-[#150d28] py-16 relative'>
         <div className='container mx-auto px-4'>
+          <div className='glitter1'>
+            <Image src={footerGlitter} className='w-[210px] mb-6' priority alt='' />
+          </div>
+          <div className='glitter2'>
+            <Image src={footerGlitter} className='w-[210px] mb-6' priority alt='' />
+          </div>
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8'>
             <div>
               <Image src={logo} className='w-[210px] mb-6' priority alt='' />
