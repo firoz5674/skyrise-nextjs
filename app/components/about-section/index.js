@@ -19,26 +19,35 @@ const AboutSection = () => {
           <div>
             <div className="w-[140px] h-[5px] bg-button-gradient"></div>
             <h2>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              About Us: Building the Future, Designing Dreams
             </h2>
             <p className="mb-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem, pariatur officia cum optio perferendis voluptatum
-              nostrum, quam unde harum adipisci rem atque. Lorem, ipsum dolor
-              sit amet consectetur adipisicing elit.
+             At <strong>Skyrise Construction & Interiors</strong>, we combine innovation, craftsmanship, and passion to deliver exceptional construction and interior design solutions tailored to your unique needs.
             </p>
             <ul>
               <li className="flex items-start mb-3">
-                <CheckIcon color="#5E36F2" size={42} className="mr-3" />
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur iure odit nam accusantium aspernatur.
+                <div>
+                  <CheckIcon color="#5E36F2" size={33} className="mr-3 mt-1" />
+                </div>
+                We bring over 26 years of industry experience to every construction and interior design project.
               </li>
               <li className="flex items-start mb-3">
-                <CheckIcon color="#5E36F2" size={42} className="mr-3" />
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur iure odit nam accusantium aspernatur.
+                <div>
+                  <CheckIcon color="#5E36F2" size={33} className="mr-3 mt-1" />
+                </div>
+                We are committed to using sustainable, eco-friendly building practices and materials.
               </li>
-              <li className="flex items-start">
-                <CheckIcon color="#5E36F2" size={42} className="mr-3" />
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur iure odit nam accusantium aspernatur.
+              <li className="flex items-start mb-3">
+                <div>
+                  <CheckIcon color="#5E36F2" size={33} className="mr-3 mt-1" />
+                </div>
+                We ensure timely project completion without compromising on quality or craftsmanship.
+              </li>
+              <li className="flex items-start mb-3">
+                <div>
+                  <CheckIcon color="#5E36F2" size={33} className="mr-3 mt-1" />
+                </div>
+                Our expert team excels in creating modern, stylish, and functional residential and commercial spaces.
               </li>
             </ul>
           </div>

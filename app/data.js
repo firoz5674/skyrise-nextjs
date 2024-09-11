@@ -82,14 +82,14 @@ export const twoCardsData = [
   {
     id: 1,
     bgImage: bgLine,
-    cardTitle: 'Lorem ipsum dolor sit amet',
-    cardDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius esse magni alias? Sapiente officiis incidunt, similique quia quasi nostrum architecto quaerat, veritatis quo aut deleniti.'
+    cardTitle: 'Transforming Spaces, Building Futures',
+    cardDesc: 'Our interior design services bring creativity and functionality to your home or office, while our construction expertise ensures that every project is built to last. We turn your vision into reality with precision and care.'
   },
   {
     id: 2,
     bgImage: bgLine2,
-    cardTitle: 'Lorem ipsum dolor sit amet',
-    cardDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius esse magni alias? Sapiente officiis incidunt, similique quia quasi nostrum architecto quaerat, veritatis quo aut deleniti.'
+    cardTitle: 'Designing Dreams, Building Excellence',
+    cardDesc: 'From concept to completion, we offer innovative interior design solutions and top-notch construction services. Whether it’s a modern redesign or a new build, we create spaces that inspire and endure.'
   },
 ]
 
@@ -103,22 +103,22 @@ export const flowerGrid = [
   },
   {
     id: 2,
-    text1: 'Total Projects Delivered',
-    text2: '600+',
+    text1: 'Years of Experience',
+    text2: '25+',
     borderRadius: '50% 0 50% 0',
     bgColor: '#dad1fd'
   },
   {
     id: 3,
-    text1: 'Total Projects Delivered',
-    text2: '600+',
+    text1: 'Team Strength',
+    text2: '50+',
     borderRadius: '50% 0 50% 0',
     bgColor: '#fdcdf8'
   },
   {
     id: 4,
-    text1: 'Total Projects Delivered',
-    text2: '600+',
+    text1: 'Cities Covered',
+    text2: '10+',
     borderRadius: '0 50% 0 50%',
     bgColor: '#d0fbfe'
   },

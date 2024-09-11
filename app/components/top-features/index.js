@@ -20,17 +20,12 @@ const TopFeatures = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 place-items-center">
           <div className="col-span-1 md:col-span-5 bg-slate-100">
-            <h2>Lorem ipsum dolor sit</h2>
+            <h2>Crafting Spaces, Building Dreams: Our Expertise</h2>
             <p className="mb-5">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
-              beatae animi hic quia quod architecto nemo aliquid quasi ab
-              tempora, rerum nisi dignissimos corporis incidunt? Eos deserunt
-              odio quibusdam delectus?
+              At <strong>Skyrise Construction & Interiors,</strong> we specialize in bringing your vision to life, whether it&apos;s building your dream home, transforming your office, or remodeling your interiors. Our team of experts blends creativity with precision, delivering high-quality construction and interior design services.
             </p>
             <p className="mb-12">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
-              beatae animi hic quia quod architecto nemo aliquid quasi ab
-              tempora, rerum nisi.
+              From custom-built homes to modern commercial spaces, we handle every project with care and craftsmanship. With a commitment to excellence and sustainability, we ensure that your space is functional, beautiful, and built to last.
             </p>
             <Link href="" className="btn btn-primary">
               Learn More

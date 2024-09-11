@@ -39,12 +39,9 @@ const FlowerDesign = () => {
           </div>
           <div className="col-span-1 lg:col-span-5">
             <div className="ml-0 lg:ml-[60px] flex justify-center items-start flex-col h-full">
-              <h2>Our Top Designs</h2>
+              <h2>Elevate Your Space: Where Design Meets Durability</h2>
               <p className="mb-10">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Dolorum repellat esse labore, vel magnam quidem tempore
-                doloribus, optio vero ratione dolores in id maiores odit ad odio
-                cumque qui tenetur.
+                We combine innovative interior design with expert residential construction services to bring your vision to life. From modern home designs to sustainable building solutions, we create spaces that inspire and endure.
               </p>
               <Link href="" className="btn btn-primary">
                 Contact Now

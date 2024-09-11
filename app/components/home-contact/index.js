@@ -7,11 +7,11 @@ const HomeContact = () => {
     <section className="pt-[80px] pb-[120px]">
       <div className="container mx-auto px-4">
         <h2 className="text-center mb-16 px-0 lg:px-[24%]">
-          Want to hire us to boost site contact us any time!
+          Get in Touch: Let’s Bring Your Vision to Life!
         </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-12 place-content-center gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 place-items-center">
           <div className="col-span-1 lg:col-span-5">
-            <Image src={contact} className="mx-aut" priority alt="" />
+            <Image src={contact} className="mx-aut h-[500px] object-contain" priority alt="" />
           </div>
           <div className="col-span-1 lg:col-span-5 flex justify-start items-start flex-col">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full">

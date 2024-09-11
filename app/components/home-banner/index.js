@@ -5,6 +5,7 @@ import Link from "next/link";
 import banner from "../../assets/images/home/banner.png";
 import { bannerServiceImages } from "@/app/data";
 import service1 from "../../assets/images/building.png";
+import service2 from "../../assets/images/home-reno.png";
 
 const HomeBanner = () => {
   return (
@@ -23,10 +24,7 @@ const HomeBanner = () => {
               delivered successfully 
             </h1>
             <p className="mb-10">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo, est ducimus? Quae neque optio rem est, cumque a minima
-              non quam facilis omnis dolorum? Quisquam dolore recusandae odit
-              mollitia quam?
+              At <strong>Skyrise</strong>, we turn ideas into reality. Whether you’re looking to build a new space, renovate an existing one, or design interiors that reflect your style, our team of experienced professionals is here to help.
             </p>
             <div className="flex items-center flex-wrap mb-16">
               {bannerServiceImages.map((item) => {
@@ -45,7 +43,7 @@ const HomeBanner = () => {
               })}
             </div>
             <Link href="" className="btn btn-primary">
-              Learn More
+              Get Free Consultation
             </Link>
           </div>
           <div className="relative mt-16 lg:mt-0">
@@ -56,7 +54,7 @@ const HomeBanner = () => {
               priority
             />
             <Image
-              src={service1}
+              src={service2}
               className="w-[70px] h-[70px] up-anim hidden lg:block"
               alt=""
               priority

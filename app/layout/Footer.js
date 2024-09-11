@@ -21,7 +21,7 @@ const Footer = () => {
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8'>
             <div>
               <Image src={logo} className='w-[210px] mb-6' priority alt='' />
-              <p className='text-[17px] text-[#9c9c9c]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae rerum reiciendis consequatur cupiditate perferendis, recusandae velit animi nihil ex repellat voluptatem iure, vero quae atque iste.</p>
+              <p className='text-[17px] text-[#9c9c9c]'>At <strong>Skyrise Construction & Interiors</strong>, we turn ideas into reality. Whether you’re looking to build a new space, renovate an existing one, or design interiors that reflect your style, our team of experienced professionals is here to help. With a focus on quality craftsmanship, innovative designs, and sustainable practices, we create spaces that are both functional and beautiful.</p>
             </div>
             <div className='ml-0 lg:ml-[16%]'>
               <h3 className='text-white opacity-80 mb-6'>Quick Service</h3>
