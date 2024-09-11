@@ -27,8 +27,8 @@ const FlowerDesign = () => {
                       backgroundColor: item.bgColor
                     }}
                   >
-                    <p className="mb-0 font-semibold">{item.text1}</p>
-                    <h3>{item.text2}</h3>
+                    <p className="mb-0 font-semibold text-[15px] lg:text-[20px]">{item.text1}</p>
+                    <h3 className="leading-0 m-0 lg:my-[1.25rem]">{item.text2}</h3>
                   </div>
                 );
               })}

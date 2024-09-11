@@ -1,5 +1,5 @@
 import React from "react";
-import contact from "../../assets/images/contact.jpg";
+import contact from "../../assets/images/contact.webp";
 import Image from "next/image";
 
 const HomeContact = () => {
@@ -11,9 +11,9 @@ const HomeContact = () => {
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 place-items-center">
           <div className="col-span-1 lg:col-span-5">
-            <Image src={contact} className="mx-aut h-[500px] object-contain" priority alt="" />
+            <Image src={contact} className="h-auto mb-6 lg:mb-0 lg:h-[500px] object-contain" priority alt="" />
           </div>
-          <div className="col-span-1 lg:col-span-5 flex justify-start items-start flex-col">
+          <div className="col-span-1 lg:col-span-5 flex justify-start items-start flex-col w-full">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full">
               <div className="mb-0">
                 <input type="text" name="firstName" id="firstName" className="w-full" placeholder="First Name" />

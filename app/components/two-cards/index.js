@@ -15,7 +15,7 @@ const TwoCards = ({title}) => {
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6'>
           {twoCardsData.map((card, index) => {
             return (
-              <div className={`rounded-2xl relative ${index === 0 ? 'bg-[#f3ebff]' : 'bg-[#ffcbe7]'}  pt-10 pb-20 px-14 z-10`} key={card}>
+              <div className={`rounded-2xl relative ${index === 0 ? 'bg-[#f3ebff]' : 'bg-[#ffcbe7]'}  pt-10 pb-20 px-6 lg:px-14 z-10`} key={card}>
                 <Image src={card.bgImage} className='absolute top-[50%] overflow-hidden z-[-1] object-cover left-0 w-full h-full translate-y-[-50%]' priority alt="" />
                 <h3>{card.cardTitle}</h3>
                 <p className='mt-7 mb-12'>{card.cardDesc}</p>
@@ -24,7 +24,7 @@ const TwoCards = ({title}) => {
             )
           })}
         </div>
-        <div className='bg-[#ffeff4] relative z-[1] rounded-2xl px-4  py-8 two-cards-cta'>
+        <div className='bg-[#ffeff4] relative z-[1] rounded-2xl px-4  py-16 lg:py-8 two-cards-cta'>
         <Image src={spiralImg} className='absolute right-0 z-[-1]' priority alt="" />
           <div className='grid grid-cols-1 lg:grid-cols-2 place-items-center'>
             <div>

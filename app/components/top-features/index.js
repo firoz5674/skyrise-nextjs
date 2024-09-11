@@ -31,7 +31,7 @@ const TopFeatures = () => {
               Learn More
             </Link>
           </div>
-          <div className="col-span-1 md:col-span-7 w-[80%] ml-auto">
+          <div className="col-span-1 md:col-span-7 w-[80%] ml-0 lg:ml-auto mt-12 lg:mt-0">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
               <div className="col-span-1 md:col-span-6">
                 <div>
@@ -44,7 +44,7 @@ const TopFeatures = () => {
                 </div>
               </div>
               <div className="col-span-1 md:col-span-6">
-                <div className="mt-10">
+                <div className="mt-0 lg:mt-10 mb-6 lg:mb-0">
                   <Image
                     src={feature3}
                     className="w-full h-[350px] object-cover rounded-xl border-4 shadow-main-shadow border-gray-100"
@@ -66,7 +66,7 @@ const TopFeatures = () => {
                 </div>
               </div>
               <div className="col-span-1 md:col-span-6">
-                <div className="mt-10">
+                <div className="mt-0 lg:mt-10">
                   <Image
                     src={feature2}
                     className="w-full h-[350px] object-cover rounded-xl border-4 shadow-main-shadow border-gray-100"

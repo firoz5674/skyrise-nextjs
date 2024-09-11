@@ -12,10 +12,10 @@ const Footer = () => {
     <>
       <section className='bg-[#150d28] py-16 relative'>
         <div className='container mx-auto px-4'>
-          <div className='glitter1'>
+          <div className='glitter1 hidden lg:block'>
             <Image src={footerGlitter} className='w-[210px] mb-6' priority alt='' />
           </div>
-          <div className='glitter2'>
+          <div className='glitter2 hidden lg:block'>
             <Image src={footerGlitter} className='w-[210px] mb-6' priority alt='' />
           </div>
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8'>
