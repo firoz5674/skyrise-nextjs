@@ -27,21 +27,27 @@ const HomeContact = () => {
     e.preventDefault();
 
     emailjs.send(
-      'YOUR_SERVICE_ID',  
-      'YOUR_TEMPLATE_ID', 
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,  
+      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+      // 'template_bf6mcx3', 
+      // 'skyrise_mail',  
+      // 'template_bf6mcx3', 
       {
-        from_name: formData.name,
-        message: formData.message,
-        reply_to: formData.email,
+        first_name: inputFields.firstName,
+        last_name: inputFields.lastName,
+        email: inputFields.email,
+        phone: inputFields.phone,
+        service: inputFields.service,
+        message: inputFields.message,
       },
-      'YOUR_USER_ID' 
+      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY 
     ).then((response) => {
       console.log('Email successfully sent!', response.status, response.text);
     }).catch((err) => {
       console.error('Failed to send email. Error:', err);
     });
 
-    setInputFields({ name: '', email: '', message: '' });
+    setInputFields({ firstName: '', lastName: '', email: '' });
   };
 
   console.log(inputFields, 'inputFields');
@@ -74,7 +80,7 @@ const HomeContact = () => {
                 </div>
               </div>
               <div className="mb-5 w-full">
-                <select className="w-full cursor-pointer" name="services">
+                <select className="w-full cursor-pointer" name="service" onChange={handleChange}>
                   <option value="">Select Service...</option>
                   <option value="">service 1</option>
                   <option value="">service 2</option>
