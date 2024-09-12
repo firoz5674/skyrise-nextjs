@@ -75,6 +75,7 @@ body {
   .error {
     color: rgb(229, 17, 17);
     font-size: 16px;
+    font-weight: 600;
   }
   .up-anim {
     animation: up-animation 8s ease infinite;
