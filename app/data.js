@@ -6,6 +6,11 @@ import service5 from "./assets/images/structural.png";
 import service6 from "./assets/images/garden.png";
 import service7 from "./assets/images/color.png";
 import service8 from "./assets/images/timeline.png";
+import service9 from "./assets/images/container.png";
+import service10 from "./assets/images/prefab.png";
+import service11 from "./assets/images/tesnsile.png";
+import service12 from "./assets/images/trunkey.png";
+import service13 from "./assets/images/arch.png";
 
 import bgLine from "./assets/images/common/bg-line.png";
 import bgLine2 from "./assets/images/common/bg-line2.png";
@@ -128,39 +133,57 @@ export const flowerGrid = [
 export const serviceCard = [
   {
     id: 1,
-    img: service5,
-    subTitle: 'Structural Engineering',
-    desc: 'Ensuring the structural integrity and safety of buildings through meticulous engineering and design expertise.'
-  },
-  {
-    id: 2,
     img: service3,
     subTitle: 'Office Interior',
     desc: 'Designing and furnishing office interiors to promote productivity, collaboration, and employee well-being.'
   },
   {
+    id: 2,
+    img: service5,
+    subTitle: 'Construction',
+    desc: 'We specialize in high-quality construction, delivering durable, energy-efficient buildings designed to meet modern standards and regulations.'
+  },
+  {
     id: 3,
-    img: service1,
-    subTitle: 'Building Construction',
-    desc: 'Crafting sturdy, innovative structures meticulously tailored to your unique vision, preferences, and functional requirements.'
+    img: service9,
+    subTitle: 'Container Homes',
+    desc: 'Container homes offer eco-friendly, cost-effective housing solutions, combining sustainability with contemporary, modular designs.'
   },
   {
     id: 4,
-    img: service3,
-    subTitle: 'Custom Furnishing',
-    desc: 'Elevating interiors with bespoke furniture pieces, adding personality and charm to every corner.'
-  },
-  {
-    id: 5,
-    img: service7,
-    subTitle: 'Color Consultation',
-    desc: 'Choosing the perfect color palette to evoke the desired ambiance and reflect your personality.'
-  },
-  {
-    id: 6,
     img: service2,
     subTitle: 'Renovation & Remodeling',
     desc: 'Revitalize your space with expert renovation and remodeling solutions, enhancing both aesthetics and functionality.'
+  },
+  {
+    id: 5,
+    img: service10,
+    subTitle: 'Prefabricated Modular Houses',
+    desc: 'Prefabricated modular houses offer efficient, customizable solutions for modern living, with fast construction and reduced costs.'
+  },
+  {
+    id: 6,
+    img: service11,
+    subTitle: 'Tensile Structure',
+    desc: 'Tensile structures provide durable, flexible architectural solutions for outdoor spaces, combining aesthetics with weather resistance.'
+  },
+  {
+    id: 7,
+    img: service12,
+    subTitle: 'Turnkey Interior Design',
+    desc: 'Turnkey interior design services deliver end-to-end solutions, ensuring a seamless transformation from concept to completion.'
+  },
+  {
+    id: 8,
+    img: service13,
+    subTitle: 'Architectural Services',
+    desc: 'Our architectural services blend creativity and functionality, delivering innovative designs tailored to meet each client’s unique vision.'
+  },
+  {
+    id: 9,
+    img: service6,
+    subTitle: 'Custom Furnishing',
+    desc: 'Elevating interiors with bespoke furniture pieces, adding personality and charm to every corner.'
   },
 ]
 
