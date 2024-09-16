@@ -115,11 +115,11 @@ const HomeContact = () => {
                 </div>
               </div>
               <div className="mb-5 w-full">
-                <select className="w-full cursor-pointer" name="service" onChange={handleChange}>
+                <select className="w-full cursor-pointer" value={inputFields.service} name="service" onChange={handleChange}>
                   <option value="">Select Service...</option>
-                  <option value="">service 1</option>
-                  <option value="">service 2</option>
-                  <option value="">service 3</option>
+                  <option value="service1">service 1</option>
+                  <option value="service2">service 2</option>
+                  <option value="service3">service 3</option>
                 </select>
               </div>
               <div className="mb-5 w-full">
