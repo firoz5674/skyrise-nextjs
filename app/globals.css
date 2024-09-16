@@ -43,7 +43,7 @@ body {
     @apply text-[18px] lg:text-[20px] text-content-color font-normal leading-8 mb-0 block;
   }
   li {
-    @apply text-[20px] text-content-color font-normal leading-8;
+    @apply text-[18px] lg:text-[20px] text-content-color font-normal leading-8 mb-0 block;
   }
   label {
     @apply font-bold text-heading-color text-xl block mb-2;
