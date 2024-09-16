@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../assets/images/logo.png";
 import BarIcon from "../components/svg-icons/bar-icon";
 import { NAV_MENU } from "../data";
@@ -12,7 +12,18 @@ const MobileHeader = () => {
   const toggleMobileMenu = () => {
     setOpenMobileMenu(!openMobileMenu);
   };
-  console.log(openMobileMenu, "openMobileMenu");
+  
+  useEffect(() => {
+    if(openMobileMenu) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+
+    return () => {
+      document.body.style.overflow = 'auto';
+    }
+  }, [openMobileMenu])
 
   return (
     <>
@@ -20,7 +31,7 @@ const MobileHeader = () => {
         <div className="flex justify-between">
           <Image src={logo} className="w-40 h-full" priority alt="" />
           <div onClick={toggleMobileMenu}>
-            <BarIcon color="red" size={36} />
+            <BarIcon color="#020390" size={36} />
           </div>
         </div>
       </header>

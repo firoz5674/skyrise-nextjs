@@ -13,7 +13,7 @@ const TopBar = () => {
           {/* <Link href="" className='btn btn-secondary px-5 pt-[9px] pb-[10px] text-[14px]'>Contact Now</Link> */}
         </div>
         <div className='cursor-pointer'>
-          <CloseIcon color="#000" size={6}  />
+          <CloseIcon color="#000" size={30}  />
         </div>
       </div>
     </section>
