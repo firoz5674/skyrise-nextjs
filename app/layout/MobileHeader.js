@@ -3,7 +3,7 @@ import React from 'react'
 
 const MobileHeader = () => {
   return (
-    <div className='block lg:hidden'>MobileHeader</div>
+    <div className='block lg:hidden'>Mobile Header</div>
   )
 }
 
