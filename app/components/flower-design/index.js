@@ -34,7 +34,7 @@ const FlowerDesign = () => {
               })}
             </div>
             <div className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]">
-              <div className="flower-circle text-[12px] w-24 h-24 rounded-full bg-white shadow-main-shadow z-30 flex justify-center items-center">Since 1998</div>
+              <div className="flower-circle text-[10px] lg:text-[12px] w-16 h-16 lg:w-24 lg:h-24 rounded-full bg-white shadow-main-shadow z-30 flex justify-center items-center">Since 1998</div>
             </div>
           </div>
           <div className="col-span-1 lg:col-span-5">
