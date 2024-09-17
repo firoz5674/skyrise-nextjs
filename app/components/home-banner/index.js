@@ -16,7 +16,7 @@ const HomeBanner = () => {
         priority
         alt=""
       />
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="w-[100%] px-4 lg:px-0">
             <h1 className="text-[36px] md:text-[44px] lg:text-[60px] xl:text-[70px] leading-[1.26] capitalize font-bold">

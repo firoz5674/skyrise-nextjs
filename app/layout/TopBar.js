@@ -5,7 +5,7 @@ import CloseIcon from '../components/svg-icons/close-icon'
 
 const TopBar = () => {
   return (
-    <section className='bg-topbar-gradient pt-4 pb-6 px-4'>
+    <section className='bg-topbar-gradient pt-4 pb-5 px-4'>
       <div className='text-center flex justify-between items-center'>
         <div></div>
         <div className='block lg:flex items-center'>

@@ -8,10 +8,19 @@ export const metadata = {
   title: 'Skyrise Construction and Interiors | Residential & Commercial Construction in Delhi NCR',
   description: 'Skyrise Construction and Interiors: Expert residential & commercial construction, renovation, modular houses, and interior services in Delhi NCR. Contact us for innovative solutions.',
   canonical: 'https://www.skyriseconstruction.in/',
-  ogTitle: 'Skyrise Construction and Interiors | Residential & Commercial Construction in Delhi NCR',
-  ogDescription: 'Skyrise Construction and Interiors: Expert residential & commercial construction, renovation, modular houses, and interior services in Delhi NCR. Contact us for innovative solutions.',
-  ogImage: 'https://mywebsite.com/default-image.jpg',
-  ogUrl: 'https://mywebsite.com',
+  openGraph: {
+    title: "Skyrise Construction and Interiors | Residential & Commercial Construction in Delhi NCR",
+    description: "Expert construction and interior services in Delhi NCR.",
+    url: "https://www.skyriseconstruction.in",
+    images: [
+      {
+        url: "https://www.yourwebsite.com/your-image.jpg",
+        width: 800,
+        height: 600,
+        alt: "Skyrise Construction",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {

@@ -36,7 +36,7 @@ export const NAV_MENU = [
   },
   {
     id: 4,
-    link: 'blogs',
+    link: '/blogs',
     label: 'Blogs',
     sectionId: 'blogs',
   },
