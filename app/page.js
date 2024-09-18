@@ -12,7 +12,7 @@ import { Metadata } from 'next';
 export const metadata = {
   title: 'Skyrise Construction and Interiors | Residential & Commercial Construction in Delhi NCR',
   description: 'Skyrise Construction and Interiors: Expert residential & commercial construction, renovation, modular houses, and interior services in Delhi NCR. Contact us for innovative solutions.',
-  canonical: '',
+  canonical: 'https://www.skyriseconstruction.in/',
   ogTitle: '',
   ogMeta: '',
   ogImage: '',
@@ -23,6 +23,9 @@ export const metadata = {
 export default function Home() {
   return (
     <>
+      <head>
+        <link rel="canonical" href="https://www.skyriseconstruction.in/" />
+      </head>
       <main>
         <HomeBanner />
         <AboutSection />

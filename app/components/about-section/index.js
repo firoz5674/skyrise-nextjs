@@ -5,7 +5,7 @@ import CheckIcon from "../svg-icons/check-icon";
 
 const AboutSection = () => {
   return (
-    <section className="pt-[120px] pb-[90px]">
+    <section className="pt-[120px] pb-[90px]" id="about">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div>

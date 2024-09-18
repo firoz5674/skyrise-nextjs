@@ -6,7 +6,7 @@ import featurePattern from "../../assets/images/flower-left-pattern.png"
 
 const FlowerDesign = () => {
   return (
-    <section className="py-[120px] relative flower-design">
+    <section className="py-[120px] relative flower-design" id="projects">
       <Image
         src={featurePattern}
         className="w-1/2 h-full absolute top-[0%] object-cover z-[-1] translate-y-[0%]"

@@ -86,7 +86,7 @@ const HomeContact = () => {
 
 
   return (
-    <section className="pt-[80px] pb-[120px]">
+    <section className="pt-[80px] pb-[120px]" id="contact">
       <div className="container mx-auto px-4">
         <h2 className="text-center mb-16 px-0 lg:px-[24%]">
           Get in Touch: Let’s Bring Your Vision to Life!
