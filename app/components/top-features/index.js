@@ -31,7 +31,7 @@ const TopFeatures = () => {
               Learn More
             </Link>
           </div>
-          <div className="col-span-1 md:col-span-7 w-[80%] ml-0 lg:ml-auto mt-12 lg:mt-0">
+          <div className="col-span-1 md:col-span-7 w-full lg:w-[80%] ml-0 lg:ml-auto mt-12 lg:mt-0">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
               <div className="col-span-1 md:col-span-6">
                 <div>

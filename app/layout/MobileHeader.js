@@ -29,7 +29,7 @@ const MobileHeader = () => {
     <>
       <header className="py-2 px-4 block md:hidden">
         <div className="flex justify-between">
-          <Image src={logo} className="w-40 h-full" priority alt="" />
+          <Link href="/"><Image src={logo} className="w-40 h-full" priority alt="" /></Link>
           <div onClick={toggleMobileMenu}>
             <BarIcon color="#020390" size={36} />
           </div>
