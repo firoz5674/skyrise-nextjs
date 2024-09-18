@@ -35,7 +35,7 @@ export default function BlogList() {
       </section>
       <section>
         <div className='container mx-auto px-4'>
-          <ul className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6'>
+          <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6'>
             {blogs.map((blog) => (
               <li key={blog.url} className='shadow-main-shadow rounded-xl mb-4'>
                 <Link href={`/blogs/${blog.url}`}>

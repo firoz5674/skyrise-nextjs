@@ -17,17 +17,18 @@ const index = () => {
               <h1>The Rise of Prefabricated Modular Houses in Urban Living</h1>
               <Image
                 src={img1}
-                className="w-full mb-4 h-[420px] object-cover"
+                className="w-full mb-4 h-auto lg:h-[420px] object-cover"
                 priority
                 alt="The Rise of Prefabricated Modular Houses in Urban Living"
               />
               <p className="leading-8 text-[19px]">Urban living is undergoing a major transformation, and at the heart of this shift is the growing adoption of prefabricated modular houses. As cities expand and populations grow, the need for quick, sustainable, and efficient housing solutions has become more urgent than ever. Modular construction offers a modern solution to these challenges, combining speed, sustainability, and flexibility. In this blog, we&apos;ll explore the reasons behind the rise of prefabricated modular homes in urban settings and why they are set to shape the future of housing.</p>
               <h2 className="text-[34px] mb-3 leading-[52px]">What Are Prefabricated Modular Houses?</h2>
               <p className="leading-8 text-[19px]">Prefabricated modular houses are homes that are built in sections or modules in a factory-controlled environment, then transported to the building site for assembly. These homes are designed to be easily customizable, energy-efficient, and environmentally friendly. Unlike traditional construction methods, modular homes can be completed in a fraction of the time, with minimal waste and a lower carbon footprint.</p>
-              <h2 className="text-[34px] mb-3 leading-[52px]">Why Prefabricated Modular Homes Are Ideal for Urban Areas</h2>
+
+              <h2 className="text-[26px] lg:text-[34px] mb-3 leading-[38px] lg:leading-[52px]">Why Prefabricated Modular Homes Are Ideal for Urban Areas</h2>
               <Image
                 src={img2}
-                className="w-full mb-4 h-[500px] object-cover"
+                className="w-full mb-4 h-auto lg:h-[500px] object-cover"
                 priority
                 alt="The Rise of Prefabricated Modular Houses in Urban Living"
               />
@@ -38,10 +39,11 @@ const index = () => {
               <p>Environmental sustainability is a growing concern in urban development. Modular construction significantly reduces waste, as materials are precisely measured and cut in a controlled factory environment. Additionally, these homes are often built with energy-efficient materials, reducing the carbon footprint of the entire project.</p>
               <h3 className="text-[28px] mb-[10px]">3. Customization and Flexibility</h3>
               <p>One of the major advantages of prefabricated homes is their customization. Modular homes can be tailored to fit the specific needs of homeowners, whether it’s a small studio apartment or a larger family home. This flexibility makes them ideal for urban areas where space constraints require creative design solutions.</p>
-              <h2 className="text-[34px] mb-3 leading-[52px]">The Advantages of Prefabricated Modular Homes in Urban Living</h2>
+
+              <h2 className="text-[26px] lg:text-[34px] mb-3 leading-[38px] lg:leading-[52px]">The Advantages of Prefabricated Modular Homes in Urban Living</h2>
               <Image
                 src={img3}
-                className="w-full mb-4 h-[500px] object-cover"
+                className="w-full mb-4 h-auto lg:h-[500px] object-cover"
                 priority
                 alt="The Rise of Prefabricated Modular Houses in Urban Living"
               />
@@ -54,10 +56,11 @@ const index = () => {
               <p>Building in urban areas can be disruptive, especially when it comes to traffic, noise, and pollution. Since the majority of a modular home is built off-site, there is significantly less disruption during construction. The modules are simply transported to the site and assembled, which reduces the impact on surrounding communities.</p>
               <h3 className="text-[28px] mb-[10px]">Durability and Quality Control</h3>
               <p>Prefabricated homes are built in a factory-controlled setting, which allows for higher quality control standards compared to traditional on-site construction. The modules are built to withstand transport and assembly, ensuring a durable, long-lasting structure.</p>
-              <h2 className="text-[34px] mb-3 leading-[52px]">Prefabricated Modular Houses vs. Traditional Housing in Urban Areas</h2>
+
+              <h2 className="text-[26px] lg:text-[34px] mb-3 leading-[38px] lg:leading-[52px]">Prefabricated Modular Houses vs. Traditional Housing in Urban Areas</h2>
               <Image
                 src={img4}
-                className="w-full mb-4 h-[500px] object-cover"
+                className="w-full mb-4 h-auto lg:h-[500px] object-cover"
                 priority
                 alt="The Rise of Prefabricated Modular Houses in Urban Living"
               />
@@ -66,12 +69,15 @@ const index = () => {
               <p>Traditional housing can take months, if not years, to complete in urban areas due to complex site preparations and regulatory hurdles. In contrast, modular homes can be built in a fraction of the time, allowing for quicker occupancy and a faster return on investment for developers.</p>
               <h3 className="text-[28px] mb-[10px]">2. Lower Environmental Impact</h3>
               <p>Urban developers are increasingly looking for ways to reduce the environmental impact of their projects. Modular homes generate less waste, use fewer materials, and often incorporate green building techniques, making them a more sustainable option for urban environments.</p>
-              <h2 className="text-[34px] mb-3 leading-[52px]">The Future of Urban Housing: Modular Homes as a Solution</h2>
+
+              <h2 className="text-[26px] lg:text-[34px] mb-3 leading-[38px] lg:leading-[52px]">The Future of Urban Housing: Modular Homes as a Solution</h2>
               <p>The rise of prefabricated modular homes signals a significant shift in how we approach urban housing. With increasing demand for affordable, sustainable, and efficient housing solutions, modular homes are poised to play a key role in addressing the housing crisis in cities around the world.</p>
               <p>As more developers and homeowners recognize the benefits of modular construction, we can expect to see an increase in the number of modular housing projects in urban areas. From compact city apartments to multi-story developments, modular homes offer a versatile and scalable solution to the challenges of urban living.</p>
-              <h2 className="text-[34px] mb-3 leading-[52px]">Why Choose Prefabricated Modular Homes for Your Urban Living Needs?</h2>
+
+              <h2 className="text-[26px] lg:text-[34px] mb-3 leading-[38px] lg:leading-[52px]">Why Choose Prefabricated Modular Homes for Your Urban Living Needs?</h2>
               <p>For homeowners and developers looking for a fast, sustainable, and cost-effective housing solution, prefabricated modular homes are the answer. With the ability to customize each home to fit specific needs, modular construction is well-suited to the demands of modern urban living.</p>
-              <h2 className="text-[34px] mb-3 leading-[52px]">Conclusion: Prefabricated Modular Homes Are the Future of Urban Living</h2>
+
+              <h2 className="text-[26px] lg:text-[34px] mb-3 leading-[38px] lg:leading-[52px]">Conclusion: Prefabricated Modular Homes Are the Future of Urban Living</h2>
               <p>In conclusion, the rise of prefabricated modular houses in urban areas is a testament to the growing demand for efficient, sustainable, and flexible housing solutions. As cities continue to expand, modular homes offer a viable alternative to traditional housing, helping to meet the needs of a rapidly growing population while reducing environmental impact.</p>
               <p>Whether you’re a developer looking to streamline your projects or a homeowner searching for a customizable and affordable option, modular construction is the future of urban housing.</p>
             </div>
