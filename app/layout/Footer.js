@@ -5,6 +5,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import ChevRight from '../components/svg-icons/chev-right';
 import footerGlitter from "../assets/images/footer-glitter.png"
+import PhoneIcon from '../components/svg-icons/phone-icon';
+import EnvelopeIcon from '../components/svg-icons/envelope-icon';
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -52,19 +54,19 @@ const Footer = () => {
               <h3 className='text-white opacity-80 mb-6'>Quick Contact</h3>
               <ul>
                 <li className='flex items-center mb-5'>
-                  <ChevRight size={22} color="#9c9c9c" className="mr-4" />
+                  <PhoneIcon size={26} color="#9c9c9c" className="mr-4" />
                   <Link href="tel:+919312148849" target='_blank' className='text-[#9c9c9c] text-[17px]'>+91-9312-1488-49</Link>
                 </li>
                 <li className='flex items-center mb-5'>
-                  <ChevRight size={22} color="#9c9c9c" className="mr-4" />
+                  <PhoneIcon size={26} color="#9c9c9c" className="mr-4" />
                   <Link href="tel:+917291994355" target='_blank' className='text-[#9c9c9c] text-[17px]'> +91-7291-9943-55</Link>
                 </li>
                 <li className='flex items-center mb-5'>
-                  <ChevRight size={22} color="#9c9c9c" className="mr-4" />
+                  <EnvelopeIcon size={26} color="#9c9c9c" className="mr-4" />
                   <Link href="mailto:skyrise30@gmail.com" target='_blank' className='text-[#9c9c9c] text-[17px]'>skyrise30@gmail.com</Link>
                 </li>
                 <li className='flex items-center mb-5'>
-                  <ChevRight size={22} color="#9c9c9c" className="mr-4" />
+                  <ChevRight size={32} color="#9c9c9c" className="mr-4" />
                   <Link href="" className='text-[#9c9c9c] text-[17px]'>C 373 Ground Floor DDA Flats jasola vihar Sarita Vihar , New Delhi 110025</Link>
                 </li>
               </ul>
