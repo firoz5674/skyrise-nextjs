@@ -1,10 +1,10 @@
 import BlogCategory from "@/app/blogs/BlogCategory";
 import Head from "next/head";
 import Image from "next/image";
-import img1 from "../../../../assets/images/blogs/prefabricated-modular-houses-urban-living-sustainable-cost-effective-homes/prefab1.jpg"
-import img2 from "../../../../assets/images/blogs/prefabricated-modular-houses-urban-living-sustainable-cost-effective-homes/prefab5.jpg"
-import img3 from "../../../../assets/images/blogs/prefabricated-modular-houses-urban-living-sustainable-cost-effective-homes/prefab3.jpg"
-import img4 from "../../../../assets/images/blogs/prefabricated-modular-houses-urban-living-sustainable-cost-effective-homes/prefab4.jpg"
+import img1 from "../../../../assets/images/blogs/prefabricated-modular-houses-urban-living-sustainable-cost-effective-homes/prefab1.webp"
+import img2 from "../../../../assets/images/blogs/prefabricated-modular-houses-urban-living-sustainable-cost-effective-homes/prefab5.webp"
+import img3 from "../../../../assets/images/blogs/prefabricated-modular-houses-urban-living-sustainable-cost-effective-homes/prefab3.webp"
+import img4 from "../../../../assets/images/blogs/prefabricated-modular-houses-urban-living-sustainable-cost-effective-homes/prefab4.webp"
 
 
 const index = () => {

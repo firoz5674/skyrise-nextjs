@@ -1,5 +1,5 @@
 
-import prefabThumbnail from "./assets/images/blogs/prefabricated-modular-houses-urban-living-sustainable-cost-effective-homes/thumbnail.jpg";
+import prefabThumbnail from "./assets/images/blogs/prefabricated-modular-houses-urban-living-sustainable-cost-effective-homes/thumbnail.webp";
 
 export const blogs = [
   {
