@@ -96,7 +96,7 @@ const HomeContact = () => {
             <Image src={contact} className="h-auto mb-6 lg:mb-0 lg:h-[500px] object-contain" priority alt="" />
           </div>
           <div className="col-span-1 lg:col-span-5 flex justify-start items-start flex-col ml-0 lg:ml-20 w-full">
-            <form onSubmit={handleSubmit}>
+            <form className="w-full" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full">
                 <div className="mb-0">
                   <input type="text" name="firstName" id="firstName" className="w-full" placeholder="First Name" onChange={handleChange} value={inputFields.firstName} />
