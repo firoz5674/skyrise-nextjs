@@ -35,7 +35,7 @@ export default function BlogList() {
       </section>
       <section>
         <div className='container mx-auto px-4'>
-          <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6'>
+          <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8'>
             {blogs.map((blog) => (
               <li key={blog.url} className='shadow-main-shadow rounded-xl mb-4'>
                 <Link href={`/blogs/${blog.url}`}>
@@ -47,7 +47,7 @@ export default function BlogList() {
                   />
                   <div className='px-6 pt-6 pb-10'>
                     <div className='flex justify-between mb-[12px]'>
-                      <p className='font-semibold text-primary-color text-base italic'>Posted: 18-09-2024</p>
+                      <p className='font-semibold text-primary-color text-base italic'>Posted: {blog.postDate}</p>
                       <p className='font-semibold text-primary-color text-base italic'>Firoz Ahmed</p>
                     </div>
                     <h4 className='mb-4'>{blog.title}</h4>

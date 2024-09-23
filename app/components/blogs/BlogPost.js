@@ -3,7 +3,6 @@
 const BlogPost = ({ blog }) => {
   return (
     <div>
-   
       <div dangerouslySetInnerHTML={{ __html: blog.content }} />
     </div>
   );

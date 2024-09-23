@@ -42,7 +42,7 @@ const HomeBanner = () => {
                 );
               })}
             </div>
-            <Link href="" className="btn btn-primary">
+            <Link href="#contact" className="btn btn-primary">
               Get Free Consultation
             </Link>
           </div>
