@@ -25,6 +25,7 @@ export default function Home() {
     <>
       <head>
         <link rel="canonical" href="https://www.skyriseconstruction.in/" />
+        <meta name="google-site-verification" content="TVJSR_fEOeHi_DTQh7NSGLiYEHRwHAjHu2GPe3KRbf0" />
       </head>
       <main>
         <HomeBanner />
