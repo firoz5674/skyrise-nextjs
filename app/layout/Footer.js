@@ -7,6 +7,7 @@ import ChevRight from '../components/svg-icons/chev-right';
 import footerGlitter from "../assets/images/footer-glitter.png"
 import PhoneIcon from '../components/svg-icons/phone-icon';
 import EnvelopeIcon from '../components/svg-icons/envelope-icon';
+import HomeIcon from '../components/svg-icons/home-icon';
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -66,7 +67,7 @@ const Footer = () => {
                   <Link href="mailto:skyrise30@gmail.com" target='_blank' className='text-[#9c9c9c] text-[17px]'>skyrise30@gmail.com</Link>
                 </li>
                 <li className='flex items-center mb-5'>
-                  <ChevRight size={32} color="#9c9c9c" className="mr-4" />
+                  <HomeIcon size={36} color="#9c9c9c" className="mr-4" />
                   <Link href="" className='text-[#9c9c9c] text-[17px]'>C 373 Ground Floor DDA Flats jasola vihar Sarita Vihar , New Delhi 110025</Link>
                 </li>
               </ul>
