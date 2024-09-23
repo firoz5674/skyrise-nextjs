@@ -9,6 +9,10 @@ export default function RootLayout({ children, metadata: pageMetadata = {} }) {
  
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/public/favicon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+      </head>
       <body>
         <TopBar />
         <Header />
