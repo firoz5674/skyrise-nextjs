@@ -82,9 +82,6 @@ const HomeContact = () => {
 
   };
 
-  console.log(inputFields, 'inputFields');
-
-
   return (
     <section className="pt-[80px] pb-[120px]" id="contact">
       <div className="container mx-auto px-4">
@@ -117,9 +114,12 @@ const HomeContact = () => {
               <div className="mb-5 w-full">
                 <select className="w-full cursor-pointer" value={inputFields.service} name="service" onChange={handleChange}>
                   <option value="">Select Service...</option>
-                  <option value="service1">service 1</option>
-                  <option value="service2">service 2</option>
-                  <option value="service3">service 3</option>
+                  <option value="Prefabricated Modular Houses">Prefabricated Modular Houses</option>
+                  <option value="Tensile Structure">Tensile Structure</option>
+                  <option value="Home Interior">Home Interior</option>
+                  <option value="Office Interior">Office Interior</option>
+                  <option value="Complete Construction">Complete Construction</option>
+                  <option value="Turnkey Interior Design">Turnkey Interior Design</option>
                 </select>
               </div>
               <div className="mb-5 w-full">

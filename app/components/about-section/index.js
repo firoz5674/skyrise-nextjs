@@ -1,17 +1,17 @@
 import Image from "next/image";
 import React from "react";
-import about from "../../assets/images/about.png";
+import about from "../../assets/images/about-img.webp";
 import CheckIcon from "../svg-icons/check-icon";
 
 const AboutSection = () => {
   return (
     <section className="pt-[120px] pb-[90px]" id="about">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div>
             <Image
               src={about}
-              className="w-full h-[450px] object-contain rounded-xl"
+              className="w-full h-full object-contain rounded-xl"
               priority
               alt=""
             />
@@ -27,25 +27,25 @@ const AboutSection = () => {
             <ul>
               <li className="flex items-start mb-3">
                 <div>
-                  <CheckIcon color="#5E36F2" size={33} className="mr-3 mt-1" />
+                  <CheckIcon color="#5E36F2" size={31} className="mr-3 mt-1" />
                 </div>
                 We bring over 26 years of industry experience to every construction and interior design project.
               </li>
               <li className="flex items-start mb-3">
                 <div>
-                  <CheckIcon color="#5E36F2" size={33} className="mr-3 mt-1" />
+                  <CheckIcon color="#5E36F2" size={31} className="mr-3 mt-1" />
                 </div>
                 We are committed to using sustainable, eco-friendly building practices and materials.
               </li>
               <li className="flex items-start mb-3">
                 <div>
-                  <CheckIcon color="#5E36F2" size={33} className="mr-3 mt-1" />
+                  <CheckIcon color="#5E36F2" size={31} className="mr-3 mt-1" />
                 </div>
                 We ensure timely project completion without compromising on quality or craftsmanship.
               </li>
               <li className="flex items-start mb-3">
                 <div>
-                  <CheckIcon color="#5E36F2" size={33} className="mr-3 mt-1" />
+                  <CheckIcon color="#5E36F2" size={31} className="mr-3 mt-1" />
                 </div>
                 Our expert team excels in creating modern, stylish, and functional residential and commercial spaces.
               </li>

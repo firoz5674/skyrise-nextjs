@@ -5,10 +5,10 @@ import personImg from "../../assets/images/person.png"
 
 const CallToAction = () => {
   return (
-    <section className="bg-primary-color relative cta p-0">
+    <section className="bg-primary-color relative cta p-10">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-12 place-items-center">
-          <div className="col-span-1 lg:col-span-5 my-10">
+          <div className="col-span-1 lg:col-span-5 my-1">
             <h2 className="text-white">
               Ready to Start Your Project?
             </h2>
