@@ -1,17 +1,29 @@
 
 import prefabThumbnail from "./assets/images/blogs/prefabricated-modular-houses-urban-living-sustainable-cost-effective-homes/thumbnail.webp";
 import architecturalServicesThumbnail from "./assets/images/blogs/architectural-services-for-modern-homes/thumbnail.webp";
+import interiorDesignThumbnail from "./assets/images/blogs/interior-design-trends/thumbnail.webp";
 
 export const blogs = [
+  {
+    url: 'interior-design-trends',
+    title: 'Interior Design Trends for 2024: Transform Your Space with Style and Sustainability',
+    description: 'Discover the top 10 interior design trends for 2024, from sustainable materials to biophilic design. Transform your space with these modern and eco-friendly ideas.',
+    thumbnail: interiorDesignThumbnail,
+    postDate: '25 Sept 2024',
+    author: 'Firoz Ahmed',
+    category: 'interior design',
+    tag: 'interior',
+    ogImg: prefabThumbnail
+  },
   {
     url: 'architectural-services-for-modern-homes',
     title: 'Architectural Services for Modern Homes | Expect Custom, Sustainable, and Innovative Designs',
     description: 'Discover what to expect from architectural services for modern homes. Learn about sustainable designs, smart home integration, and bespoke architecture tailored to modern living.',
     thumbnail: architecturalServicesThumbnail,
     postDate: '23 Sept 2024',
-    author: 'Firoz Ahmed',
+    author: 'Salman Seth',
     category: 'Architecture',
-    tag: 'prefabricated',
+    tag: 'architecture',
     ogImg: prefabThumbnail
   },
   {

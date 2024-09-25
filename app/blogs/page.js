@@ -48,7 +48,7 @@ export default function BlogList() {
                   <div className='px-6 pt-6 pb-10'>
                     <div className='flex justify-between mb-[12px]'>
                       <p className='font-semibold text-primary-color text-base italic'>Posted: {blog.postDate}</p>
-                      <p className='font-semibold text-primary-color text-base italic'>Firoz Ahmed</p>
+                      <p className='font-semibold text-primary-color text-base italic'>{blog.author}</p>
                     </div>
                     <h4 className='mb-4'>{blog.title}</h4>
                     <p className='text-[18px]'>{blog.description}</p>

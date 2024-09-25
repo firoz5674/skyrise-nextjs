@@ -56,7 +56,7 @@ const index = () => {
                 src={img4}
                 className="w-full mb-4 h-auto lg:h-[500px] object-cover"
                 priority
-                alt="Initial Consultation: Understanding Your Vision"
+                alt="Smart Home Integration"
               />
               <p className="leading-8 text-[19px]">Another hallmark of modern home architecture is the integration of smart technologies. Home automation systems, which allow you to control lighting, heating, security, and even appliances remotely, are becoming a staple in architectural designs. Your architect will plan the layout to accommodate these systems, ensuring that they blend seamlessly with your home’s aesthetic.</p>
               <p className="leading-8 text-[19px]">Features such as automated blinds, smart thermostats, and voice-controlled devices will enhance your living experience while making your home more efficient. Architects work closely with smart home technology providers to integrate these systems during the construction phase, ensuring everything runs smoothly from the moment you move in.</p>
