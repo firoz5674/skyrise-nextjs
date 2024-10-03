@@ -25,6 +25,7 @@ export default function Home() {
     <>
       <head>
         <link rel="canonical" href="https://www.skyriseconstruction.in/" />
+        <meta name="msvalidate.01" content="EAC997A22129642FBDDB016FBB713339" />
         <meta name="google-site-verification" content="TVJSR_fEOeHi_DTQh7NSGLiYEHRwHAjHu2GPe3KRbf0" />
       </head>
       <main>
