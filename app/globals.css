@@ -182,6 +182,11 @@ body {
     top: 30%;
     left: 15%;
   }
+  .about-cta-bg {
+    background: url("./assets/images/about/ctabg.png")  no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
   @media (max-width: 768px) {
     .two-cards-cta::before {
       left: 2%;

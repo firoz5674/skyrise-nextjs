@@ -14,7 +14,7 @@ const DesktopHeader = () => {
           {NAV_MENU.map((menu, index) => {
             console.log(index, 'index');
             return (
-              <Link href={`${menu.link.includes('blogs') ? '/blogs' : `#${menu.link}`}`} key={menu.id}
+              <Link href={menu.link} key={menu.id}
                 className={`px-6 font-semibold text-[18px] text-heading-color ${menu.id === 5 ? 'btn btn-primary text-[16px] text-white ml-6 px-5 pt-[12px] pb-[13px] text-md' : ''}`}>{menu.label}</Link>
             )
           })}

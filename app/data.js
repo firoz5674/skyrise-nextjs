@@ -15,22 +15,31 @@ import service13 from "./assets/images/arch.png";
 import bgLine from "./assets/images/common/bg-line.png";
 import bgLine2 from "./assets/images/common/bg-line2.png";
 
+import why1 from "./assets/images/about/why1.png";
+import why2 from "./assets/images/about/why2.png";
+import why3 from "./assets/images/about/why3.png";
+import why4 from "./assets/images/about/why4.png";
+import why5 from "./assets/images/about/why5.png";
+import why6 from "./assets/images/about/why6.png";
+import why7 from "./assets/images/about/why7.png";
+import why8 from "./assets/images/about/why8.png";
+
 export const NAV_MENU = [
   {
     id: 1,
-    link: 'about',
+    link: '/about',
     label: 'About Us',
     sectionId: 'about',
   },
   {
     id: 2,
-    link: 'services',
+    link: '/services',
     label: 'Services',
     sectionId: 'services',
   },
   {
     id: 3,
-    link: 'projects',
+    link: '/projects',
     label: 'Projects',
     sectionId: 'projects',
   },
@@ -42,7 +51,7 @@ export const NAV_MENU = [
   },
   {
     id: 5,
-    link: 'contact',
+    link: '/contact',
     label: 'Contact Us',
     sectionId: 'contact',
   },
@@ -187,3 +196,61 @@ export const serviceCard = [
   },
 ]
 
+export const whyChooseAbout = [
+  {
+    id: 1,
+    img: why1,
+    bgColor: '#B47AFF',
+    title: 'Comprehensive Design Solutions',
+    para: 'We offer end-to-end solutions for all your construction and interior design needs, from conceptualizing to the final touches. Our team of experts ensures that every project is seamlessly executed and delivered on time.'
+  },
+  {
+    id: 2,
+    img: why2,
+    bgColor: '#37BB7D',
+    title: 'Expertise in Modern Architectural Services',
+    para: 'With extensive experience, we specialize in modern architectural services that blend functionality and aesthetics. Our designs focus on sustainability and energy efficiency, ensuring that each project is both visually stunning and eco-friendly.'
+  },
+  {
+    id: 3,
+    img: why3,
+    bgColor: '#FA8747',
+    title: 'Turnkey Interior Design',
+    para: 'We provide turnkey interior design services, meaning we handle every detail of your project from start to finish. From space planning to furniture selection, we transform interiors that match your lifestyle and tastes.'
+  },
+  {
+    id: 4,
+    img: why4,
+    bgColor: '#02CECE',
+    title: 'Prefabricated Modular Homes',
+    para: 'Our expertise in prefabricated modular homes ensures that you get a cost-effective, eco-friendly, and fast-track construction solution without compromising quality or design.'
+  },
+  {
+    id: 5,
+    img: why5,
+    bgColor: '#4b55ff',
+    title: 'Customized Tensile Structures',
+    para: 'We are specialists in designing and installing tensile structures for both residential and commercial spaces. Our tensile architecture solutions offer durability, aesthetic appeal, and functionality.'
+  },
+  {
+    id: 6,
+    img: why6,
+    bgColor: '#e136a6',
+    title: 'Renovation and Remodeling Experts',
+    para: 'Whether you are looking to upgrade a single room or renovate an entire property, our renovation and remodeling services are designed to enhance the functionality and style of your space with modern solutions.'
+  },
+  {
+    id: 7,
+    img: why7,
+    bgColor: '#b1af19',
+    title: 'Attention to Detail At Skyrise Construction & Interiors',
+    para: 'We take pride in our keen attention to detail, ensuring that every aspect of the project meets your specific requirements and exceeds your expectations.'
+  },
+  {
+    id: 8,
+    img: why8,
+    bgColor: '#f11b1b',
+    title: 'Timely Delivery and Budget-Friendly',
+    para: 'We understand the importance of timelines and budget in construction projects. Our team ensures that your project is completed on time and within the agreed-upon budget without compromising on quality.'
+  },
+]

@@ -50,8 +50,8 @@ export default function BlogList() {
                       <p className='font-semibold text-primary-color text-base italic'>Posted: {blog.postDate}</p>
                       <p className='font-semibold text-primary-color text-base italic'>{blog.author}</p>
                     </div>
-                    <h4 className='mb-4'>{blog.title}</h4>
-                    <p className='text-[18px]'>{blog.description}</p>
+                    <h4 className='mb-4 text-[18px] lg:text-[24px] leading-8'>{blog.title}</h4>
+                    <p className='text-base leading-7 lg:leading-8 lg:text-[18px]'>{blog.description}</p>
                   </div>
                 </Link>
               </li>

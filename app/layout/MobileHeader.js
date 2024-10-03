@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import logo from "../assets/images/logo.png";
 import BarIcon from "../components/svg-icons/bar-icon";
 import { NAV_MENU } from "../data";
@@ -8,6 +8,13 @@ import CloseIcon from "../components/svg-icons/close-icon";
 
 const MobileHeader = () => {
   const [openMobileMenu, setOpenMobileMenu] = useState(false);
+  const mobileMenuRef = useRef(null);
+
+  const handleOutsideClick = (e) => {
+    if(mobileMenuRef.current && !mobileMenuRef.current.contains(e.target)) {
+      setOpenMobileMenu(false);
+    }
+  }
 
   const toggleMobileMenu = () => {
     setOpenMobileMenu(!openMobileMenu);
@@ -20,8 +27,11 @@ const MobileHeader = () => {
       document.body.style.overflow = 'auto';
     }
 
+    document.addEventListener('mousedown', handleOutsideClick)
+
     return () => {
       document.body.style.overflow = 'auto';
+      document.removeEventListener('mousedown', handleOutsideClick)
     }
   }, [openMobileMenu])
 
@@ -37,6 +47,7 @@ const MobileHeader = () => {
       </header>
       {openMobileMenu && (
         <div
+          ref={mobileMenuRef}
           className={`fixed z-50 h-full top-0 w-[70%] bg-white p-2 block md:hidden"
           }`}
         >
@@ -53,7 +64,8 @@ const MobileHeader = () => {
                 return (
                   <li key={menu.id} className="mb-3">
                     <Link
-                      href={`#${menu.link}`}
+                      onClick={toggleMobileMenu}
+                      href={menu.link}
                       className={`px-6 font-semibold text-[17px] text-heading-color ${
                         menu.id === 5
                           ? "btn btn-primary !text-[14px] text-white ml-6 px-5 pt-[6px] pb-2 mt-4 inline-block"
