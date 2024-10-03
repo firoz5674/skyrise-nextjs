@@ -2,8 +2,20 @@
 import prefabThumbnail from "./assets/images/blogs/prefabricated-modular-houses-urban-living-sustainable-cost-effective-homes/thumbnail.webp";
 import architecturalServicesThumbnail from "./assets/images/blogs/architectural-services-for-modern-homes/thumbnail.webp";
 import interiorDesignThumbnail from "./assets/images/blogs/interior-design-trends/thumbnail.webp";
+import interiorDesign2Thumbnail from "./assets/images/blogs/trending-interior-design-styles/thumbnail2.webp";
 
 export const blogs = [
+  {
+    url: 'trending-interior-design-styles',
+    title: 'Top Interior Design Trends of 2024: Transform Your Space with Modern Style with Skyrise',
+    description: 'Explore the hottest 2024 interior design trends with Skyrise Construction & Interiors. As the best interior company in Delhi NCR, we bring the latest styles to your home.',
+    thumbnail: interiorDesign2Thumbnail,
+    postDate: '03 Oct 2024',
+    author: 'Firoz Ahmed',
+    category: 'interior design',
+    tag: 'interior',
+    ogImg: prefabThumbnail
+  },
   {
     url: 'interior-design-trends',
     title: 'Interior Design Trends for 2024: Transform Your Space with Style and Sustainability',
