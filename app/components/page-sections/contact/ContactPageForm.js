@@ -85,24 +85,24 @@ const ContactPageForm = () => {
         <div className="grid grid-cols-1 lg:grid-cols-1 w-full lg:w-[60%] mx-auto">
           <form onSubmit={handleSubmit}>
             <div className="flex justify-between w-full flex-wrap">
-              <div className="w-[48%]">
+              <div className="w-full md:w-[48%]">
                 <div className="mb-7">
                   <input type="text" name="firstName" className="w-full border-none shadow-very-light-shadow py-4" placeholder="First Name" value={inputFields.firstName} onChange={handleChange} />
                   {errors.firstName && <p className="error">{errors.firstName}</p>}
                 </div>
               </div>
-              <div className="w-[48%]">
+              <div className="w-full md:w-[48%]">
                 <div className="mb-7">
                   <input type="text" name="lastName" className="w-full border-none shadow-very-light-shadow py-4" placeholder="Last Name" value={inputFields.lastName} onChange={handleChange} />
                 </div>
               </div>
-              <div className="w-[48%]">
+              <div className="w-full md:w-[48%]">
                 <div className="mb-7">
                   <input type="text" name="email" className="w-full border-none shadow-very-light-shadow py-4" placeholder="Email Address" value={inputFields.email} onChange={handleChange} />
                   {errors.email && <p className="error">{errors.email}</p>}
                 </div>
               </div>
-              <div className="w-[48%]">
+              <div className="w-full md:w-[48%]">
                 <div className="mb-7">
                   <input type="text" name="phone" className="w-full border-none shadow-very-light-shadow py-4" placeholder="Phone Number" value={inputFields.phone} onChange={handleChange} />
                   {errors.phone && <p className="error">{errors.phone}</p>}

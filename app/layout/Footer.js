@@ -29,23 +29,23 @@ const Footer = () => {
             <div className='ml-0 lg:ml-[16%]'>
               <h3 className='text-white opacity-80 mb-6'>Quick Service</h3>
               <ul>
-                <li className='flex items-center mb-5'>
+                <li className='flex items-center mb-4'>
                   <ChevRight size={22} color="#9c9c9c" className="mr-4" />
                   <Link href="/about" className='text-[#9c9c9c] text-[17px]'>About</Link>
                 </li>
-                <li className='flex items-center mb-5'>
+                <li className='flex items-center mb-4'>
                   <ChevRight size={22} color="#9c9c9c" className="mr-4" />
                   <Link href="/services" className='text-[#9c9c9c] text-[17px]'>Services</Link>
                 </li>
-                <li className='flex items-center mb-5'>
+                <li className='flex items-center mb-4'>
                   <ChevRight size={22} color="#9c9c9c" className="mr-4" />
                   <Link href="/blogs" className='text-[#9c9c9c] text-[17px]'>Blogs</Link>
                 </li>
-                <li className='flex items-center mb-5'>
+                <li className='flex items-center mb-4'>
                   <ChevRight size={22} color="#9c9c9c" className="mr-4" />
                   <Link href="" className='text-[#9c9c9c] text-[17px]'>Home Interior</Link>
                 </li>
-                <li className='flex items-center mb-5'>
+                <li className='flex items-center mb-4'>
                   <ChevRight size={22} color="#9c9c9c" className="mr-4" />
                   <Link href="/contact" className='text-[#9c9c9c] text-[17px]'>Contact</Link>
                 </li>
@@ -54,19 +54,19 @@ const Footer = () => {
             <div>
               <h3 className='text-white opacity-80 mb-6'>Quick Contact</h3>
               <ul>
-                <li className='flex items-center mb-5'>
+                <li className='flex items-center mb-4'>
                   <PhoneIcon size={26} color="#9c9c9c" className="mr-4" />
                   <Link href="tel:+919312148849" target='_blank' className='text-[#9c9c9c] text-[17px]'>+91-9312-1488-49</Link>
                 </li>
-                <li className='flex items-center mb-5'>
+                <li className='flex items-center mb-4'>
                   <PhoneIcon size={26} color="#9c9c9c" className="mr-4" />
                   <Link href="tel:+917291994355" target='_blank' className='text-[#9c9c9c] text-[17px]'> +91-7291-9943-55</Link>
                 </li>
-                <li className='flex items-center mb-5'>
+                <li className='flex items-center mb-4'>
                   <EnvelopeIcon size={26} color="#9c9c9c" className="mr-4" />
                   <Link href="mailto:skyrise30@gmail.com" target='_blank' className='text-[#9c9c9c] text-[17px]'>skyrise30@gmail.com</Link>
                 </li>
-                <li className='flex items-center mb-5'>
+                <li className='flex items-center mb-4'>
                   <HomeIcon size={36} color="#9c9c9c" className="mr-4" />
                   <Link href="" className='text-[#9c9c9c] text-[17px]'>C 373 Ground Floor DDA Flats jasola vihar Sarita Vihar , New Delhi 110025</Link>
                 </li>
