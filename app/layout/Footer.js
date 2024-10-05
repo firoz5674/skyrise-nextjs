@@ -31,15 +31,15 @@ const Footer = () => {
               <ul>
                 <li className='flex items-center mb-5'>
                   <ChevRight size={22} color="#9c9c9c" className="mr-4" />
-                  <Link href="" className='text-[#9c9c9c] text-[17px]'>Home Renovation</Link>
+                  <Link href="/about" className='text-[#9c9c9c] text-[17px]'>About</Link>
                 </li>
                 <li className='flex items-center mb-5'>
                   <ChevRight size={22} color="#9c9c9c" className="mr-4" />
-                  <Link href="" className='text-[#9c9c9c] text-[17px]'>Office Interior</Link>
+                  <Link href="/services" className='text-[#9c9c9c] text-[17px]'>Services</Link>
                 </li>
                 <li className='flex items-center mb-5'>
                   <ChevRight size={22} color="#9c9c9c" className="mr-4" />
-                  <Link href="" className='text-[#9c9c9c] text-[17px]'>Commercial Interior</Link>
+                  <Link href="/blogs" className='text-[#9c9c9c] text-[17px]'>Blogs</Link>
                 </li>
                 <li className='flex items-center mb-5'>
                   <ChevRight size={22} color="#9c9c9c" className="mr-4" />
@@ -47,7 +47,7 @@ const Footer = () => {
                 </li>
                 <li className='flex items-center mb-5'>
                   <ChevRight size={22} color="#9c9c9c" className="mr-4" />
-                  <Link href="" className='text-[#9c9c9c] text-[17px]'>Structural Engineering</Link>
+                  <Link href="/contact" className='text-[#9c9c9c] text-[17px]'>Contact</Link>
                 </li>
               </ul>
             </div>

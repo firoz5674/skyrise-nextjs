@@ -1,13 +1,14 @@
 
 import React from 'react'
+import ContactMain from '../components/page-sections/contact'
 
 const Contact = () => {
   return (
-    <section>
-      <div className='container mx-auto px-4'>
-        <h3>We are working on this page...</h3>
-      </div>
-    </section>
+    <>
+      <main>
+        <ContactMain />
+      </main>
+    </>
   )
 }
 

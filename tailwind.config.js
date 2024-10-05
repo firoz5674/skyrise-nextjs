@@ -26,6 +26,7 @@ module.exports = {
         'main-shadow': '0px 0px 30px rgba(0,0,0,0.12)',
         'light-shadow': '0px 0px 30px rgba(0,0,0,0.067)',
         'dark-shadow': '0px 0px 20px rgba(0,0,0,0.4)',
+        'very-light-shadow': '0px 10px 50px 0px rgba(0, 0, 0, 0.05)',
       },
     },
   },

@@ -73,7 +73,7 @@ const HomeContact = () => {
 
       setTimeout(() => {
         setSuccessMsg('');
-      }, 4000)
+      }, 7000)
 
     }).catch((err) => {
       console.error('Failed to send email. Error:', err);
