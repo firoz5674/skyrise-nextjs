@@ -43,8 +43,8 @@ const FlowerDesign = () => {
               <p className="mb-10">
                 We combine innovative interior design with expert residential construction services to bring your vision to life. From modern home designs to sustainable building solutions, we create spaces that inspire and endure.
               </p>
-              <Link href="" className="btn btn-primary">
-                Contact Now
+              <Link href="/about" className="btn btn-primary">
+                Know More
               </Link>
             </div>
           </div>

@@ -13,7 +13,7 @@ const CallToAction = () => {
               Ready to Start Your Project?
             </h2>
             <p className="text-white mb-12">We’d love to discuss how we can help bring your ideas to life. Whether you’re planning a new build, a renovation, or an interior redesign, our team is here to guide you through every step of the process.</p>
-            <Link href="" className="btn btn-secondary">
+            <Link href="/contact" className="btn btn-secondary relative z-40">
               Contact Us
             </Link>
           </div>

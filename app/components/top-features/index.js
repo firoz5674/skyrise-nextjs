@@ -13,7 +13,7 @@ const TopFeatures = () => {
     <section className="bg-[hsl(210,25%,97%,1)] relative py-[80px] z-1">
       <Image
         src={featureBg}
-        className="w-full h-full absolute top-[50%] object-cover translate-y-[-50%]"
+        className="w-full h-full absolute top-[50%] object-cover translate-y-[-50%] z-10"
         priority
         alt=""
       />
@@ -27,7 +27,7 @@ const TopFeatures = () => {
             <p className="mb-12">
               From custom-built homes to modern commercial spaces, we handle every project with care and craftsmanship. With a commitment to excellence and sustainability, we ensure that your space is functional, beautiful, and built to last.
             </p>
-            <Link href="" className="btn btn-primary">
+            <Link href="/about" className="btn btn-primary relative z-30">
               Learn More
             </Link>
           </div>

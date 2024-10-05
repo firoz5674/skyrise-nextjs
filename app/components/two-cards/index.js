@@ -19,7 +19,7 @@ const TwoCards = ({title}) => {
                 <Image src={card.bgImage} className='absolute top-[50%] overflow-hidden z-[-1] object-cover left-0 w-full h-full translate-y-[-50%]' priority alt="" />
                 <h3>{card.cardTitle}</h3>
                 <p className='mt-7 mb-12'>{card.cardDesc}</p>
-                <Link href="" className='btn btn-outlined'>Contact Now</Link>
+                <Link href="/contact" className='btn btn-outlined'>Contact Now</Link>
               </div>
             )
           })}
