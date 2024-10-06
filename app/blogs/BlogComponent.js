@@ -5,5 +5,6 @@ export const components = {
   'architectural-services-for-modern-homes': dynamic(() => import('../components/blogs/blog-post/ArchitecturalServicesForModernHomes')),
   'interior-design-trends': dynamic(() => import('../components/blogs/blog-post/InteriorDesignTrends')),
   'trending-interior-design-styles': dynamic(() => import('../components/blogs/blog-post/TrendingInteriorDesignStyles')),
+  'home-construction-guide': dynamic(() => import('../components/blogs/blog-post/HomeConstructionGuide')),
   'second-blog': dynamic(() => import('../components/blogs/blog-post/SecondBlog.js')),
 };

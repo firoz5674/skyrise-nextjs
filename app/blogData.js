@@ -3,8 +3,20 @@ import prefabThumbnail from "./assets/images/blogs/prefabricated-modular-houses-
 import architecturalServicesThumbnail from "./assets/images/blogs/architectural-services-for-modern-homes/thumbnail.webp";
 import interiorDesignThumbnail from "./assets/images/blogs/interior-design-trends/thumbnail.webp";
 import interiorDesign2Thumbnail from "./assets/images/blogs/trending-interior-design-styles/thumbnail2.webp";
+import homeConstructionThumbnail from "./assets/images/blogs/home-construction-guide/thumbnail.webp";
 
 export const blogs = [
+  {
+    url: 'home-construction-guide',
+    title: 'Home Construction Guide 2024: Building Your Dream Home with Modern Trends and Best Practices',
+    description: 'Planning a new home? Explore the latest trends in home construction in 2024. Learn about sustainable materials, smart homes, and essential building tips from Skyrise Construction.',
+    thumbnail: homeConstructionThumbnail,
+    postDate: '06 Oct 2024',
+    author: 'Firoz Ahmed',
+    category: 'construction',
+    tag: 'construction',
+    ogImg: prefabThumbnail
+  },
   {
     url: 'trending-interior-design-styles',
     title: 'Top Interior Design Trends of 2024: Transform Your Space with Modern Style with Skyrise',
