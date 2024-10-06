@@ -12,8 +12,8 @@ export const blogs = [
     description: 'Planning a new home? Explore the latest trends in home construction in 2024. Learn about sustainable materials, smart homes, and essential building tips from Skyrise Construction.',
     thumbnail: homeConstructionThumbnail,
     postDate: '06 Oct 2024',
-    author: 'Firoz Ahmed',
-    category: 'construction',
+    author: 'Salman Seth',
+    category: 'Construction',
     tag: 'construction',
     ogImg: prefabThumbnail
   },
@@ -24,7 +24,7 @@ export const blogs = [
     thumbnail: interiorDesign2Thumbnail,
     postDate: '03 Oct 2024',
     author: 'Firoz Ahmed',
-    category: 'interior design',
+    category: 'Interior Design',
     tag: 'interior',
     ogImg: prefabThumbnail
   },
@@ -35,7 +35,7 @@ export const blogs = [
     thumbnail: interiorDesignThumbnail,
     postDate: '25 Sept 2024',
     author: 'Firoz Ahmed',
-    category: 'interior design',
+    category: 'Interior Design',
     tag: 'interior',
     ogImg: prefabThumbnail
   },

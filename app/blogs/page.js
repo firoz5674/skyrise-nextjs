@@ -1,18 +1,33 @@
-// /app/blog/page.js
-
+"use client";
 import Link from 'next/link';
 import { blogs } from '../blogData';
 import Image from 'next/image';
 
 import PageTopSection from '../components/page-top-section';
+import React, { useState } from 'react';
 
-export const metadata = {
-  title: 'Blogs by Skyrise Construction & Interiors',
-  description: 'Explore Skyrise Construction & Interiors blogs here. Explore the latest construction and interior design trends here.',
-  canonical: 'https://www.skyriseconstruction.in/blogs'
-}
+// export const metadata = {
+//   title: 'Blogs by Skyrise Construction & Interiors',
+//   description: 'Explore Skyrise Construction & Interiors blogs here. Explore the latest construction and interior design trends here.',
+  
+// }
 
 export default function BlogList() {
+  const [filteredBlogs, setFilteredBlogs] = useState(blogs);
+  const [activeCategory, setActiveCategory] = useState('All');
+
+  const categories = ["All", ...new Set(blogs.map((blog) => blog.category))];
+
+  const filterBlogs = (category) => {
+    if(category === 'All') {
+      setFilteredBlogs(blogs);
+    } else {
+      const filtered = blogs.filter((blog) => blog.category === category);
+      setFilteredBlogs(filtered);
+    }
+    setActiveCategory(category);
+  }
+
   return (
     <>
       <head>
@@ -21,8 +36,13 @@ export default function BlogList() {
       <PageTopSection title="Latest Blogs by Skyrise" subTitle="Explore the latest construction and interior news and trends" />
       <section>
         <div className='container mx-auto px-4'>
+          <div className="mb-10">
+            {categories.map((catg, index) => (
+              <button className={activeCategory === catg ? 'btn btn-primary' : 'mr-6 ml-6 font-semibold text-[18px]'} key={index} onClick={() => filterBlogs(catg)}>{catg}</button>
+            ))}
+          </div>
           <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8'>
-            {blogs.map((blog) => (
+            {filteredBlogs.map((blog) => (
               <li key={blog.url} className='shadow-main-shadow rounded-xl mb-4'>
                 <Link href={`/blogs/${blog.url}`}>
                   <Image
