@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
 import aboutBg from "../../../assets/images/about-bg2.png";
-import about from "../../../assets/images/about/profile2.png";
+import about from "../../../assets/images/about/profile2.webp";
 import Link from 'next/link';
 
 const aboutText = `Skyrise Construction & Interiors company is founded by Mr. MD Rashid in 1998. We are involved in Construction and Interiors agency and serving our clients for more than 20 years in New Delhi. The company has achieved outstanding prominence through last 20 years and this is an ongoing process as it progress to build a good reputation by quoting competing pricing, keeping the honesty and giving the right involvement for each and every customer's respective requirements.

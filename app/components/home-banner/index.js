@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import bannerBg from "../../assets/images/home/banner-bg.png";
+import bannerBg from "../../assets/images/home/banner-bg.webp";
 import Link from "next/link";
-import banner from "../../assets/images/home/banner.png";
+import banner from "../../assets/images/home/banner.webp";
 import { bannerServiceImages } from "@/app/data";
 import service1 from "../../assets/images/building.png";
 import service2 from "../../assets/images/home-reno.png";
