@@ -38,7 +38,7 @@ export default function BlogList() {
         <div className='container mx-auto px-4'>
           <div className="mb-10">
             {categories.map((catg, index) => (
-              <button className={activeCategory === catg ? 'btn btn-primary' : 'mr-6 ml-6 font-semibold text-[18px]'} key={index} onClick={() => filterBlogs(catg)}>{catg}</button>
+              <button className={activeCategory === catg ? 'btn btn-primary py-3 lg:mb-0' : 'mr-6 ml-6 mb-5 font-semibold text-[18px]'} key={index} onClick={() => filterBlogs(catg)}>{catg}</button>
             ))}
           </div>
           <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8'>
