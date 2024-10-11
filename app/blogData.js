@@ -4,8 +4,20 @@ import architecturalServicesThumbnail from "./assets/images/blogs/architectural-
 import interiorDesignThumbnail from "./assets/images/blogs/interior-design-trends/thumbnail.webp";
 import interiorDesign2Thumbnail from "./assets/images/blogs/trending-interior-design-styles/thumbnail2.webp";
 import homeConstructionThumbnail from "./assets/images/blogs/home-construction-guide/thumbnail.webp";
+import chosseBestConstructionThumbnail from "./assets/images/blogs/how-to-choose-best-construction-company-delhi-ncr/thumbnail.webp";
 
 export const blogs = [
+  {
+    url: 'how-to-choose-best-construction-company-delhi-ncr',
+    title: 'How to Choose the Best Construction Company in Delhi NCR for Your Project',
+    description: 'Looking for the best construction company in Delhi NCR? Explore our comprehensive guide to selecting top-tier construction contractors and services for your project.',
+    thumbnail: chosseBestConstructionThumbnail,
+    postDate: '11 Oct 2024',
+    author: 'Firoz Ahmed',
+    category: 'Construction',
+    tag: 'construction',
+    ogImg: prefabThumbnail
+  },
   {
     url: 'home-construction-guide',
     title: 'Home Construction Guide 2024: Building Your Dream Home with Modern Trends and Best Practices',

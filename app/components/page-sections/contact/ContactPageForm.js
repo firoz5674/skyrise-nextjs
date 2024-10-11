@@ -1,6 +1,9 @@
 "use client";
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import emailjs from 'emailjs-com';
+import LocationIcon from "../../svg-icons/location-icon";
+import ChevDown from "../../svg-icons/chev-down";
+import Image from "next/image";
 
 const ContactPageForm = () => {
   const [inputFields, setInputFields] = useState({
@@ -14,6 +17,13 @@ const ContactPageForm = () => {
   const [errors, setErrors] = useState({});
   const [successMsg, setSuccessMsg] = useState('');
   const [loading, setLoading] = useState(false);
+  const [search, setSearch] = useState('');
+  const [countries, setCountries] = useState([]);
+  const [selectedCountry, setSelectedCountry] = useState(null);
+  const [countryFlag, setCountryFlag] = useState(null);
+  const [dropddown, setDropdown] = useState(false);
+
+
 
   const handleChange = (e) => {
     setInputFields({
@@ -78,6 +88,27 @@ const ContactPageForm = () => {
 
   };
 
+  useEffect(() => {
+    fetchCountries();
+  }, [])
+
+  const toggleDropdown = () => {
+    setDropdown(!dropddown);
+  }
+
+  const fetchCountries = async () => {
+    try {
+      const response = await fetch('https://restcountries.com/v3.1/all');
+      if(!response.ok) {
+        throw new Error('http error');
+      }
+      const result = await response.json();
+      setCountries(result);
+    } catch (err) {
+      console.log(err, 'api error');
+    }
+  }
+
   return (
     <section className="bg-[#FAFAFB] py-8 lg:py-[110px]">
       <div className="container mx-auto px-4">
@@ -108,6 +139,7 @@ const ContactPageForm = () => {
                   {errors.phone && <p className="error">{errors.phone}</p>}
                 </div>
               </div>
+              
               <div className="w-full">
                 <div className="mb-7">
                   <select name="service" className="w-full border-none shadow-very-light-shadow py-4 cursor-pointer" value={inputFields.service} onChange={handleChange}>
