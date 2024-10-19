@@ -56,7 +56,7 @@ const index = () => {
 
               <h2 className="text-[26px] lg:text-[34px] mb-3 leading-[38px] lg:leading-[52px]">7. Request Detailed Bids and Compare</h2>
               <p className="leading-8 text-[19px]">Now that you’ve researched a few companies, it’s time to request quotes. A good construction company will offer a detailed bid, breaking down costs for materials, labor, permits, and any other expenses. Compare multiple bids but remember: the lowest price isn’t always the best.</p>
-              <BlogTip top="Look for comprehensive estimates that include all potential costs. Some companies may offer lower initial quotes but could add hidden fees later. Prioritize quality and transparency." />
+              <BlogTip tip="Look for comprehensive estimates that include all potential costs. Some companies may offer lower initial quotes but could add hidden fees later. Prioritize quality and transparency." />
 
               <h2 className="text-[26px] lg:text-[34px] mb-3 leading-[38px] lg:leading-[52px]">8. Consider Sustainability and Modern Trends</h2>
               <Image
