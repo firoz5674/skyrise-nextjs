@@ -7,5 +7,6 @@ export const components = {
   'trending-interior-design-styles': dynamic(() => import('../components/blogs/blog-post/TrendingInteriorDesignStyles')),
   'home-construction-guide': dynamic(() => import('../components/blogs/blog-post/HomeConstructionGuide')),
   'how-to-choose-best-construction-company-delhi-ncr': dynamic(() => import('../components/blogs/blog-post/HowToChooseBestConstructionCompanyDelhiNcr')),
+  'interior-design-and-construction-services': dynamic(() => import('../components/blogs/blog-post/interiorDesignAndConstructionServices')),
   'second-blog': dynamic(() => import('../components/blogs/blog-post/SecondBlog.js')),
 };

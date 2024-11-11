@@ -5,8 +5,20 @@ import interiorDesignThumbnail from "./assets/images/blogs/interior-design-trend
 import interiorDesign2Thumbnail from "./assets/images/blogs/trending-interior-design-styles/thumbnail2.webp";
 import homeConstructionThumbnail from "./assets/images/blogs/home-construction-guide/thumbnail.webp";
 import chosseBestConstructionThumbnail from "./assets/images/blogs/how-to-choose-best-construction-company-delhi-ncr/thumbnail.webp";
+import interiorDesign3Thumbnail from "./assets/images/blogs/interior-design-and-construction-services/thumbnail3.webp";
 
 export const blogs = [
+  {
+    url: 'interior-design-and-construction-services',
+    title: '15 Ways to Transform Your Space with Expert Interior Design and Construction Services',
+    description: 'Discover top interior design and construction services to transform your home or office. From custom home building to modern renovations, learn everything you need for a stylish, functional space.',
+    thumbnail: interiorDesign3Thumbnail,
+    postDate: '11 Nov 2024',
+    author: 'Firoz Ahmed',
+    category: 'Construction',
+    tag: 'construction',
+    ogImg: prefabThumbnail
+  },
   {
     url: 'how-to-choose-best-construction-company-delhi-ncr',
     title: 'How to Choose the Best Construction Company in Delhi NCR for Your Project',
