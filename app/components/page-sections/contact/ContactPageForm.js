@@ -109,7 +109,10 @@ const ContactPageForm = () => {
     <section className="bg-[#FAFAFB] py-8 lg:py-[110px]">
       <div className="container mx-auto px-4">
         <h2 className="text-center mb-[5rem]">Let&apos;s have a coffee together!</h2>
-        <div className="grid grid-cols-1 lg:grid-cols-1 w-full lg:w-[60%] mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 w-full mx-auto">
+          <div className="mb-12 md:mb-0">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.633062724546!2d77.28850887528593!3d28.55074697570956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce408a34923cd%3A0x19f7ba48a2bc419d!2sSkyrise%20construction%20%26%20Interiors!5e0!3m2!1sen!2sin!4v1760694967531!5m2!1sen!2sin" className="border border-gray-400 w-full md:w-[94%] h-[350px] md:h-[450px] rounded-xl" allowfullscreen=""></iframe>
+          </div>
           <form onSubmit={handleSubmit}>
             <div className="flex justify-between w-full flex-wrap">
               <div className="w-full md:w-[48%]">
