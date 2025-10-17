@@ -1,6 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react"
-import emailjs from 'emailjs-com';
+import React, { useState, useEffect } from "react";
 import LocationIcon from "../../svg-icons/location-icon";
 import ChevDown from "../../svg-icons/chev-down";
 import Image from "next/image";
@@ -16,81 +15,80 @@ const ContactPageForm = () => {
   });
   const [errors, setErrors] = useState({});
   const [successMsg, setSuccessMsg] = useState('');
+  const [errorMsg, setErrorMsg] = useState('');
   const [loading, setLoading] = useState(false);
-  const [search, setSearch] = useState('');
   const [countries, setCountries] = useState([]);
-  const [selectedCountry, setSelectedCountry] = useState(null);
-  const [countryFlag, setCountryFlag] = useState(null);
   const [dropddown, setDropdown] = useState(false);
-
-
 
   const handleChange = (e) => {
     setInputFields({
       ...inputFields,
       [e.target.name]: e.target.value
-    })
-    setErrors({...errors, [e.target.name]: ''})
+    });
+    setErrors(prev => ({ ...prev, [e.target.name]: '' }));
+    setErrorMsg('');
   }
 
   const validateFields = () => {
     const newErrors = {};
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if(!inputFields.firstName) newErrors.firstName = 'First Name is required';
-    if(!inputFields.email || !emailRegex.test(inputFields.email)) newErrors.email = 'Invalid Email Address';
-    if(!inputFields.phone) newErrors.phone = 'Phone number is required';
-    if(!inputFields.message) newErrors.message = 'Message is required';
+    if (!inputFields.firstName) newErrors.firstName = 'First Name is required';
+    if (!inputFields.email || !emailRegex.test(inputFields.email)) newErrors.email = 'Invalid Email Address';
+    if (!inputFields.phone) newErrors.phone = 'Phone number is required';
+    if (!inputFields.message) newErrors.message = 'Message is required';
 
     return newErrors;
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setSuccessMsg('');
+    setErrorMsg('');
+
     const validationErrors = validateFields();
-    if(Object.keys(validationErrors).length > 0) {
+    if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
       return;
     }
 
     setLoading(true);
+    try {
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(inputFields),
+      });
 
-    emailjs.send(
-      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,  
-      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-      // 'template_bf6mcx3', 
-      // 'skyrise_mail',  
-      // 'template_bf6mcx3', 
-      {
-        first_name: inputFields.firstName,
-        last_name: inputFields.lastName,
-        email: inputFields.email,
-        phone: inputFields.phone,
-        service: inputFields.service,
-        message: inputFields.message,
-      },
-      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY 
-    ).then((response) => {
-      console.log('Email successfully sent!', response.status, response.text);
-      setSuccessMsg('Your message has been successfully sent! We will contact you shortly');
-      setInputFields({ firstName: '', lastName: '', email: '', phone: '', service: '', message: '' });
-      setErrors({});
+      const data = await response.json(); 
+
+      if (response.ok) {
+        setSuccessMsg("Your message has been successfully sent! We will contact you shortly.");
+        setInputFields({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          service: "",
+          message: "",
+        });
+        setErrors({});
+        setTimeout(() => setSuccessMsg(""), 10000);
+      } else {
+        console.error("Server returned error:", data);
+        setErrorMsg(data?.error || "Failed to send message. Please try again later.");
+      }
+    } catch (err) {
+      console.error("Network or other error:", err);
+      setErrorMsg("Something went wrong. Please try again later.");
+    } finally {
       setLoading(false);
-
-      setTimeout(() => {
-        setSuccessMsg('');
-      }, 7000)
-
-    }).catch((err) => {
-      console.error('Failed to send email. Error:', err);
-      setLoading(false);
-    });
-
+    }
   };
 
   useEffect(() => {
     fetchCountries();
-  }, [])
+  }, []);
 
   const toggleDropdown = () => {
     setDropdown(!dropddown);
@@ -99,9 +97,7 @@ const ContactPageForm = () => {
   const fetchCountries = async () => {
     try {
       const response = await fetch('https://restcountries.com/v3.1/all');
-      if(!response.ok) {
-        throw new Error('http error');
-      }
+      if (!response.ok) throw new Error('http error');
       const result = await response.json();
       setCountries(result);
     } catch (err) {
@@ -127,6 +123,7 @@ const ContactPageForm = () => {
                   <input type="text" name="lastName" className="w-full border-none shadow-very-light-shadow py-4" placeholder="Last Name" value={inputFields.lastName} onChange={handleChange} />
                 </div>
               </div>
+
               <div className="w-full md:w-[48%]">
                 <div className="mb-7">
                   <input type="text" name="email" className="w-full border-none shadow-very-light-shadow py-4" placeholder="Email Address" value={inputFields.email} onChange={handleChange} />
@@ -139,7 +136,7 @@ const ContactPageForm = () => {
                   {errors.phone && <p className="error">{errors.phone}</p>}
                 </div>
               </div>
-              
+
               <div className="w-full">
                 <div className="mb-7">
                   <select name="service" className="w-full border-none shadow-very-light-shadow py-4 cursor-pointer" value={inputFields.service} onChange={handleChange}>
@@ -153,18 +150,26 @@ const ContactPageForm = () => {
                   </select>
                 </div>
               </div>
+
               <div className="w-full">
                 <div className="mb-7">
                   <textarea name="message" rows="6" cols="12" className="w-full border-none shadow-very-light-shadow py-4 resize-none" placeholder="Your Requirements..." value={inputFields.message} onChange={handleChange}></textarea>
                   {errors.message && <p className="error">{errors.message}</p>}
-                </div> 
+                </div>
               </div>
+
               <div className="w-full">
                 <div className="mb-7">
-                  <button type="submit" className="btn btn-primary w-full" disabled={loading}>{loading ? 'Submitting...' : 'Submit'}</button>
-                </div> 
+                  <button type="submit" className="btn btn-primary w-full" disabled={loading}>
+                    {loading ? 'Submitting...' : 'Submit'}
+                  </button>
+                </div>
+
                 {successMsg && (
-                  <div className="bg-[#0fa70f] text-white rounded-lg text-base text-center p-3 font-medium">{successMsg}</div>
+                  <div className="bg-[#0fa70f] text-white rounded-lg text-base text-center p-4 font-medium">{successMsg}</div>
+                )}
+                {errorMsg && (
+                  <div className="bg-[#ffdddd] text-[#990000] rounded-lg text-base text-center p-4 font-medium mt-3">{errorMsg}</div>
                 )}
               </div>
             </div>
@@ -172,7 +177,7 @@ const ContactPageForm = () => {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default ContactPageForm
+export default ContactPageForm;
