@@ -10,6 +10,7 @@ export default function RootLayout({ children, metadata: pageMetadata = {} }) {
   return (
     <html lang="en">
       <head>
+        <meta name="google-site-verification" content="TVJSR_fEOeHi_DTQh7NSGLiYEHRwHAjHu2GPe3KRbf0" />
         <link rel="icon" href="/public/favicon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
       </head>
