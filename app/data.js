@@ -111,7 +111,7 @@ export const flowerGrid = [
   {
     id: 1,
     text1: 'Total Projects Delivered',
-    text2: '900+',
+    text2: '300+',
     borderRadius: '0 50% 0 50%',
     bgColor: '#fdfbeb'
   },
