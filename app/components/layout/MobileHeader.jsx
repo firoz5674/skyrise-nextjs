@@ -97,7 +97,7 @@ export default function MobileHeader() {
 
         <div className="mt-auto pt-8">
           <AccentButton
-            href="#contact"
+            href="contact"
             onClick={close}
             className="w-full justify-between !py-1"
           >
