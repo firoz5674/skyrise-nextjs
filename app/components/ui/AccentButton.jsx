@@ -1,6 +1,6 @@
 import { LuArrowRight } from "react-icons/lu"
 export default function AccentButton({
-  href = "#contact",
+  href = "contact",
   children,
   tone = "brand",
   size = "md",

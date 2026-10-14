@@ -26,7 +26,7 @@ export default function CtaBold() {
                 {cta2.title}
               </h2>
               <div className="mt-9">
-                <AccentButton href="#contact">{cta2.button}</AccentButton>
+                <AccentButton href="contact">{cta2.button}</AccentButton>
               </div>
             </div>
             <div className="relative h-56 lg:hidden">

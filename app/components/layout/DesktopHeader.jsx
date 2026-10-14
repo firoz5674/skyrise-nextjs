@@ -23,7 +23,7 @@ export default function DesktopHeader() {
         </nav>
         <div className="flex items-center gap-3">
           <ThemeToggle />
-          <AccentButton href="/contact" size="sm">
+          <AccentButton href="contact" size="sm">
             Book a free site visit
           </AccentButton>
         </div>

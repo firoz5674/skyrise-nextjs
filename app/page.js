@@ -1,19 +1,4 @@
 "use client"
-// import Head from "next/head";
-// import AboutSection from "./components/about-section";
-// import CallToAction from "./components/call-to-action";
-// import FlowerDesign from "./components/flower-design";
-// import HomeBanner from "./components/home-banner";
-// import HomeContact from "./components/home-contact";
-// import ServiceCard from "./components/service-cards";
-// import TopFeatures from "./components/top-features";
-// import TwoCards from "./components/two-cards";
-// import { Metadata } from 'next';
-// import { useEffect, useState } from "react";
-// import HeroNew from "./components/hero-new";
-
-// import Footer from "./components/layout/Footer"
-// import Header from "./components/layout/Header"
 import CtaBold from "./components/sections/CtaBold"
 import CtaSplit from "./components/sections/CtaSplit"
 import DesignBuild from "./components/sections/DesignBuild"
