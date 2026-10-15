@@ -1,18 +1,20 @@
 "use client";
 import { useState } from "react"
 import { LuPlus } from "react-icons/lu"
-import { faqs } from "../../data/content"
 import SectionHeading from "../ui/SectionHeading"
+import { homeFaqs } from "@/app/data/allFaq";
+
+
 export default function Faq() {
   const [open, setOpen] = useState(0)
   return (
     <section id="faqs" className="section-y">
       <div className="container-page grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
         <div className="lg:sticky lg:top-32 lg:self-start">
-          <SectionHeading title={faqs.title} />
+          <SectionHeading title={homeFaqs.title} />
         </div>
         <div className="divide-y divide-line border-y border-line">
-          {faqs.items.map(([q, a], i) => {
+          {homeFaqs.items.map(([q, a], i) => {
             const isOpen = open === i
             return (
               <div key={q}>

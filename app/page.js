@@ -1,7 +1,8 @@
+import JsonLd from "./components/JsonLd"
 import CtaBold from "./components/sections/CtaBold"
 import CtaSplit from "./components/sections/CtaSplit"
 import DesignBuild from "./components/sections/DesignBuild"
-import Faq from "./components/sections/Faq"
+import HomeFaq from "./components/sections/HomeFaq"
 import Hero from "./components/sections/Hero"
 import Process from "./components/sections/Process"
 import ProjectsGallery from "./components/sections/ProjectsGallery"
@@ -10,6 +11,9 @@ import ReliablePartner from "./components/sections/ReliablePartner"
 import ServicesReveal from "./components/sections/ServicesReveal"
 import SpacesWeServe from "./components/sections/SpacesWeServe"
 import WhyChoose from "./components/sections/WhyChoose"
+import { homeFaqs } from "./data/allFaq"
+import { faqSchema } from "./lib/schema"
+
 
 export const metadata = {
   title: 'Construction & Interior Design in Delhi NCR | Skyrise Construction',
@@ -35,6 +39,7 @@ export default function Home() {
         <meta name="google-site-verification" content="TVJSR_fEOeHi_DTQh7NSGLiYEHRwHAjHu2GPe3KRbf0" />
       </head>
       <main>
+        <JsonLd graph={[faqSchema(homeFaqs)]} />
         <Hero />
         <ProjectsGallery />
         <ServicesReveal />
@@ -46,7 +51,7 @@ export default function Home() {
         <SpacesWeServe />
         <CtaBold />
         <DesignBuild />
-        <Faq />
+        <HomeFaq />
       </main>
     </>
   );
