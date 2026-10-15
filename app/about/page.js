@@ -5,12 +5,17 @@ import Head from 'next/head'
 import AboutMain from '../components/page-sections/about'
 
 export const metadata = {
-  title: 'About Skyrise Construction & Interiors - Leading Experts in Modern Architecture & Interior Design',
-  description: 'Skyrise Construction & Interiors offers expert modern architecture, interior design, and sustainable building solutions tailored to meet your unique needs.',
-  alternates: {
-    canonical: 'https://www.skyriseconstruction.in/about',
+  title: 'About Skyrise | Construction & Interior Company in New Delhi',
+  description:
+    'Founded in 1998 by Mr. Mohd Rashid, Skyrise is a New Delhi construction and interior company building tensile structures, porta cabins and PUF panels.',
+  alternates: { canonical: 'https://www.skyriseconstruction.in/about' },
+  openGraph: {
+    title: 'About Skyrise | Construction & Interior Company in New Delhi',
+    url: 'https://www.skyriseconstruction.in/about',
+    type: 'website',
+    locale: 'en_IN',
   },
-}
+};
 
 const About = () => {
 
