@@ -1,10 +1,10 @@
 import { images } from "./images"
 export const navLinks = [
+  { label: "About Us", href: "/about" },
   { label: "Services", href: "#services" },
   { label: "Projects", href: "#projects" },
   { label: "Process", href: "#process" },
   { label: "Why Skyrise", href: "#why-skyrise" },
-  { label: "FAQs", href: "#faqs" },
 ]
 export const heroContent = {
   badge: "Top Construction and Interior Company in Delhi NCR",
