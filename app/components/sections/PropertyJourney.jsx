@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react"
 import { journey } from "../../data/content"
 import AccentButton from "../ui/AccentButton"

@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react"
 import { LuPlus } from "react-icons/lu"
 import { faqs } from "../../data/content"

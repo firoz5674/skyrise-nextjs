@@ -1,4 +1,3 @@
-"use client"
 import CtaBold from "./components/sections/CtaBold"
 import CtaSplit from "./components/sections/CtaSplit"
 import DesignBuild from "./components/sections/DesignBuild"
@@ -12,49 +11,43 @@ import ServicesReveal from "./components/sections/ServicesReveal"
 import SpacesWeServe from "./components/sections/SpacesWeServe"
 import WhyChoose from "./components/sections/WhyChoose"
 
-export default function Home() {
+export const metadata = {
+  title: 'Construction & Interior Design in Delhi NCR | Skyrise Construction',
+  description: 'Skyrise: Delhi-based construction, turnkey interior design & tensile structure company. 25+ years, 900+ projects in Delhi NCR. Get a free site visit!',
+  alternates: {
+    canonical: 'https://www.skyriseconstruction.in/',
+  },
+  openGraph: {
+    title: 'Construction & Interior Design in Delhi NCR | Skyrise Construction',
+    description:
+      'Turnkey interiors, construction and tensile structures across Delhi, Noida, Gurgaon, Ghaziabad and Faridabad.',
+    url: 'https://www.skyriseconstruction.in/',
+    type: 'website',
+    locale: 'en_IN',
+  },
+}
 
+
+export default function Home() {
   return (
     <>
       <head>
-        <link rel="canonical" href="https://www.skyriseconstruction.in/" />
-        <meta name="msvalidate.01" content="EAC997A22129642FBDDB016FBB713339" />
         <meta name="google-site-verification" content="TVJSR_fEOeHi_DTQh7NSGLiYEHRwHAjHu2GPe3KRbf0" />
       </head>
       <main>
-        <main>
-          <Hero />
-          <ProjectsGallery />
-          <ServicesReveal />
-          <CtaSplit />
-          <WhyChoose />
-          <Process />
-          <PropertyJourney />
-          <ReliablePartner />
-          <SpacesWeServe />
-          <CtaBold />
-          <DesignBuild />
-          <Faq />
-        </main>
+        <Hero />
+        <ProjectsGallery />
+        <ServicesReveal />
+        <CtaSplit />
+        <WhyChoose />
+        <Process />
+        <PropertyJourney />
+        <ReliablePartner />
+        <SpacesWeServe />
+        <CtaBold />
+        <DesignBuild />
+        <Faq />
       </main>
     </>
-
-    // <>
-    //   <head>
-    //     <link rel="canonical" href="https://www.skyriseconstruction.in/" />
-    //     <meta name="msvalidate.01" content="EAC997A22129642FBDDB016FBB713339" />
-    //     <meta name="google-site-verification" content="TVJSR_fEOeHi_DTQh7NSGLiYEHRwHAjHu2GPe3KRbf0" />
-    //   </head>
-    //   <main>
-    //     <HomeBanner />
-    //     <AboutSection />
-    //     <TopFeatures />
-    //     <ServiceCard title="Our Services" />
-    //     <TwoCards title="Innovative Designs, Solid Construction: Your Perfect Space Awaits" />
-    //     <FlowerDesign />
-    //     <CallToAction />
-    //     <HomeContact />
-    //   </main>
-    // </>
   );
 }

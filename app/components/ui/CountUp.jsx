@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useState } from "react"
 import { useInView } from "../../hooks/useInView"
 export default function CountUp({ value, suffix = "", duration = 1600 }) {

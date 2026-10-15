@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useState } from "react"
 import { LuChevronLeft, LuChevronRight } from "react-icons/lu"
 import { heroSlides } from "../../data/content"
