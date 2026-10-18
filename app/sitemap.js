@@ -12,6 +12,7 @@ const staticRoutes = [
   { route: "/areas/noida", priority: 0.7 },
   { route: "/areas/gurugram", priority: 0.7 },
   { route: "/services/tensile-structure-manufacturers-in-delhi", priority: 0.8 },
+  { route: "/services/turnkey-interior-design-delhi-ncr", priority: 0.8 },
 ]
 
 export default function sitemap() {

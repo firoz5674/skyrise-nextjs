@@ -2,7 +2,6 @@ export const servicePageSlugs = [
   "house-and-commercial-construction",
   "architectural-design-services",
   "home-renovation-and-remodeling",
-  "turnkey-interior-design",
   "office-interior-design",
   "custom-furniture-and-modular-interiors",
   "tensile-car-parking-structures",

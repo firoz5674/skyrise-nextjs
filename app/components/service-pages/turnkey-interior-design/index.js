@@ -1,5 +1,3 @@
-import UnderConstruction from "../../ui/UnderConstruction"
+import TurnkeyInteriorPage from "./TurnkeyInteriorPage"
 
-export default function ServicePage() {
-  return <UnderConstruction />
-}
+export default TurnkeyInteriorPage

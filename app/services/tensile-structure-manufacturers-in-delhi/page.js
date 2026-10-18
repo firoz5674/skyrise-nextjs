@@ -1,7 +1,7 @@
 import JsonLd from "../../components/JsonLd"
 import TensilePage from "../../components/service-pages/tensile-structure-manufacturers-in-delhi"
 import { breadcrumb, faqSchema, serviceSchema } from "../../lib/schema"
-import { tensileFaqs } from "../../data/tensile"
+import { tensileStructureManufacturersInDelhi } from "../../data/tensile"
 
 const path = "/services/tensile-structure-manufacturers-in-delhi"
 const title = "Tensile Structure Manufacturers in Delhi NCR | Skyrise"
@@ -25,7 +25,7 @@ export default function TensileStructuresPage() {
     <JsonLd graph={[
       serviceSchema({ name: "Tensile Structure Design and Installation", description, path }),
       breadcrumb([["Home", "/"], ["Services", "/services"], ["Tensile Structures", path]]),
-      faqSchema(tensileFaqs),
+      faqSchema(tensileStructureManufacturersInDelhi),
     ]} />
     <TensilePage />
   </>

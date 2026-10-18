@@ -22,7 +22,7 @@ export const serviceMenuGroups = [
     title: "Interior Design",
     icon: "interior",
     items: [
-      ["Turnkey Interior Design", "/services/turnkey-interior-design", "sofa"],
+      ["Turnkey Interior Design", "/services/turnkey-interior-design-delhi-ncr", "sofa"],
       ["Office Interior Design", "/services/office-interior-design", "office"],
       ["Custom Furniture and Modular Interiors", "/services/custom-furniture-and-modular-interiors", "chair"],
     ],

@@ -7,6 +7,11 @@ const nextConfig = {
         destination: "/services/tensile-structure-manufacturers-in-delhi",
         permanent: true,
       },
+      {
+        source: "/services/turnkey-interior-design",
+        destination: "/services/turnkey-interior-design-delhi-ncr",
+        permanent: true,
+      },
     ]
   },
 };
