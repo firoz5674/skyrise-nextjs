@@ -1,11 +1,54 @@
 import { images } from "./images"
 export const navLinks = [
-  { label: "About Us", href: "/about" },
-  { label: "Services", href: "#services" },
-  { label: "Projects", href: "#projects" },
-  { label: "Process", href: "#process" },
-  { label: "Why Skyrise", href: "#why-skyrise" },
+  { label: "Home", href: "/" },
+  { label: "Services", href: "/#services", menu: "services" },
+  { label: "Areas", href: "/#contact", menu: "areas" },
+  { label: "Projects", href: "/projects" },
+  { label: "About", href: "/about" },
+  { label: "Blog", href: "/blogs" },
+  { label: "Contact Us", href: "/contact", button: true },
 ]
+export const serviceMenuGroups = [
+  {
+    title: "Construction and Architecture",
+    icon: "building",
+    items: [
+      ["House and Commercial Construction", "/services/house-and-commercial-construction", "building"],
+      ["Architectural Design Services", "/services/architectural-design-services", "ruler"],
+      ["Home Renovation and Remodeling", "/services/home-renovation-and-remodeling", "hammer"],
+    ],
+  },
+  {
+    title: "Interior Design",
+    icon: "interior",
+    items: [
+      ["Turnkey Interior Design", "/services/turnkey-interior-design", "sofa"],
+      ["Office Interior Design", "/services/office-interior-design", "office"],
+      ["Custom Furniture and Modular Interiors", "/services/custom-furniture-and-modular-interiors", "chair"],
+    ],
+  },
+  {
+    title: "Tensile and Outdoor Structures",
+    icon: "tensile",
+    items: [
+      ["Tensile Structures", "/services/tensile-structure-manufacturers-in-delhi", "tent"],
+      ["Tensile Car Parking Structures", "/services/tensile-car-parking-structures", "car"],
+      ["Tensile Canopies and Gazebos", "/services/tensile-canopies-and-gazebos", "tent"],
+    ],
+  },
+  {
+    title: "Prefab and Modular",
+    icon: "prefab",
+    items: [
+      ["Container Homes", "/services/container-homes", "container"],
+      ["Prefabricated Modular Houses", "/services/prefabricated-modular-houses", "blocks"],
+      ["Porta Cabins", "/services/porta-cabins", "warehouse"],
+      ["PUF Insulated Panels", "/services/puf-insulated-panels", "layers"],
+      ["Aerocon Prefabricated Structures", "/services/aerocon-prefabricated-structures", "building"],
+    ],
+  },
+]
+export const serviceAreas = ["Delhi", "Noida", "Gurugram (Gurgaon)"]
 export const heroContent = {
   badge: "Top Construction and Interior Company in Delhi NCR",
   title:

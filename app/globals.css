@@ -47,6 +47,8 @@
       color 0.5s ease;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
+    user-select: text;
+    -webkit-user-select: text;
   }
   h1,
   h2,
@@ -58,6 +60,9 @@
   ::selection {
     background: #2563eb;
     color: #fff;
+  }
+  [aria-hidden="true"] {
+    pointer-events: none;
   }
   :focus-visible {
     outline: 2px solid #38bdf8;
@@ -92,6 +97,15 @@
       linear-gradient(var(--grid-line) 1px, transparent 1px),
       linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
     background-size: 56px 56px;
+    pointer-events: none;
+  }
+  .architectural-card {
+    background-color: rgb(var(--surface));
+    background-image:
+      linear-gradient(to right, transparent 31px, var(--grid-line) 32px),
+      linear-gradient(to bottom, transparent 31px, var(--grid-line) 32px);
+    background-size: 32px 32px;
+    background-position: right top;
   }
   .section-y {
     padding-block: clamp(4rem, 8vw, 4rem);

@@ -51,7 +51,7 @@ const Founder = () => {
                 <p className="mt-6 text-lg leading-relaxed text-white/75">
                   Mr. Mohd Rashid started Skyrise in 1998 with a simple idea:
                   give clients honest advice, fair prices and good work. More
-                  than two decades later, he still leads a team of 450
+                  than two decades later, he still leads a team of 120
                   professionals who work to the same principle.
                 </p>
                 <p className="mt-4 text-lg leading-relaxed text-white/75">

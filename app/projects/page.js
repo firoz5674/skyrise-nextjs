@@ -1,14 +1,9 @@
+import UnderConstruction from "../components/ui/UnderConstruction"
 
-import React from 'react'
-
-const Projects = () => {
-  return (
-    <section>
-      <div className='container mx-auto px-4'>
-        <h3>We are working on this page...</h3>
-      </div>
-    </section>
-  )
+export const metadata = {
+  title: "We are currently designing this page | Skyrise",
 }
 
-export default Projects
+export default function ProjectsPage() {
+  return <UnderConstruction />
+}

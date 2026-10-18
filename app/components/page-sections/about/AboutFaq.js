@@ -20,7 +20,7 @@ const faqs = [
   ],
   [
     "How big is the Skyrise team?",
-    "Skyrise has a team of 450 professionals, including engineers, designers, fabricators and site supervisors.",
+    "Skyrise has a team of 120 professionals, including engineers, designers, fabricators and site supervisors.",
   ],
   [
     "Where is Skyrise located and which areas do you serve?",

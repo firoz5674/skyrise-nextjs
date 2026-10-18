@@ -18,7 +18,7 @@ const trust = [
   {
     icon: LuUsers,
     title: "A Large In-House Team",
-    text: "With 450 professionals, we have the people and skills to handle small homes and large commercial projects.",
+    text: "With 120 professionals, we have the people and skills to handle small homes and large commercial projects.",
   },
   {
     icon: LuCloudSun,

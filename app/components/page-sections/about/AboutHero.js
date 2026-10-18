@@ -15,7 +15,7 @@ function Glow({ className }) {
 const numbers = [
   { value: 25, suffix: "+", label: "years of experience" },
   { value: 900, suffix: "+", label: "projects delivered" },
-  { value: 450, suffix: "", label: "professionals on our team" },
+  { value: 120, suffix: "", label: "professionals on our team" },
   { value: 10, suffix: "+", label: "cities covered" },
 ]
 
