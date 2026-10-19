@@ -15,7 +15,7 @@ import {
 } from "react-icons/lu";
 import { portaCabinFaqs } from "../../../data/portaCabins";
 import { images } from "../../../data/images";
-import containerImage from "../../../assets/images/container.png";
+import containerImage from "../../../assets/images/porta-cabin.jpeg";
 import prefabImage from "../../../assets/images/prefab.png";
 import InnerPageEnquiryForm from "../InnerPageEnquiryForm";
 import InnerPageEnquiryIntro from "../InnerPageEnquiryIntro";
@@ -65,6 +65,11 @@ const types = [
     "Custom Cabins",
     "A layout, size and finish designed around your specific need.",
     "Special uses",
+  ],
+  [
+    "Others",
+    "",
+    "If you have a different requirement, we can design a cabin to suit it.",
   ],
 ];
 const uses = [
@@ -141,20 +146,30 @@ function SectionHeading({ eyebrow, title, text, light = false }) {
 export default function PortaCabinsPage() {
   return (
     <main className="service-page-content">
-      <section className="relative isolate overflow-hidden bg-[#0a0f24] text-white">
+      <section className="relative isolate overflow-hidden bg-[#080d20] text-white">
         <div
           aria-hidden="true"
-          className="blueprint-grid absolute inset-0 opacity-30"
+          className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_12%_8%,rgba(37,99,235,.28),transparent_42%),radial-gradient(ellipse_at_88%_72%,rgba(14,165,233,.18),transparent_38%),linear-gradient(135deg,#080d20_0%,#0c1732_52%,#091224_100%)]"
         />
-        <div className="container-page relative grid min-h-[780px] items-center gap-12 py-16 lg:grid-cols-[1.05fr_.95fr] lg:py-24">
-          <div>
-            <p className="eyebrow font-bold uppercase tracking-[.18em] text-sky-300">
+        <div
+          aria-hidden="true"
+          className="blueprint-grid pointer-events-none absolute inset-0 opacity-45 [mask-image:linear-gradient(to_bottom,black_10%,transparent_100%)]"
+        />
+        <div aria-hidden="true" className="pointer-events-none absolute -right-40 -top-48 size-[34rem] rounded-full border border-sky-200/[.08] sm:-right-20 sm:-top-56" />
+        <div aria-hidden="true" className="pointer-events-none absolute -right-24 -top-32 size-[25rem] rounded-full border border-blue-200/[.07] sm:-right-4 sm:-top-40" />
+        <div className="container-page relative grid min-h-[680px] items-center gap-12 py-16 lg:grid-cols-[1.05fr_.95fr] lg:py-36">
+          <div className="relative z-10">
+            <p className="inline-flex items-center gap-2 rounded-full border border-sky-300/20 bg-sky-300/[.08] px-4 py-2 text-xs font-bold uppercase tracking-[.16em] text-sky-200 shadow-[0_8px_30px_rgba(14,165,233,.08)]">
+              <span aria-hidden="true" className="size-2 rounded-full bg-sky-300 shadow-[0_0_14px_rgba(56,189,248,.9)]" />
               Designed, built and installed in Delhi NCR
             </p>
-            <h1 className="mt-5 max-w-3xl font-display text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl">
-              Porta Cabin Manufacturers in Delhi NCR
+            <h1 className="mt-6 max-w-3xl font-display text-[clamp(2.7rem,5.5vw,4.7rem)] font-extrabold leading-[1.03] tracking-[-.04em]">
+              Porta Cabin Manufacturers
+              <span className="mt-1 block bg-gradient-to-r from-sky-200 via-cyan-300 to-blue-300 bg-clip-text text-transparent">
+                in Delhi NCR
+              </span>
             </h1>
-            <p className="mt-6 max-w-2xl text-xl leading-relaxed text-white/75">
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-slate-200/80 sm:text-xl">
               Site offices, security cabins, labour accommodation, shops and
               farmhouse cabins, made to your size and installed at your site.
               Skyrise has 25+ years of experience and 900+ projects across Delhi
@@ -163,43 +178,52 @@ export default function PortaCabinsPage() {
             <div className="mt-8 flex flex-wrap gap-3">
               <a
                 href="#site-visit"
-                className="inline-flex items-center gap-2 rounded-full bg-brand-gradient px-6 py-3.5 font-bold text-white"
+                className="group inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 px-6 py-3.5 font-bold text-white shadow-[0_12px_35px_rgba(37,99,235,.32)] transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_16px_42px_rgba(14,165,233,.4)]"
               >
-                Get a Free Quote <LuArrowRight />
+                Get a Free Quote <LuArrowRight className="transition-transform group-hover:translate-x-1" />
               </a>
               <a
                 href="tel:+919312148849"
-                className="inline-flex items-center gap-2 rounded-full border border-white/25 px-6 py-3.5 font-bold text-white"
+                className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[.05] px-6 py-3.5 font-bold text-white shadow-inner shadow-white/[.03] backdrop-blur transition-colors hover:border-sky-200/40 hover:bg-white/[.09]"
               >
-                <LuPhone /> Call 93121 48849
+                <LuPhone className="text-sky-200" /> Call 93121 48849
               </a>
             </div>
-            <div className="mt-9 flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold text-white/70">
+            <div className="mt-9 flex flex-wrap gap-x-4 gap-y-3 text-sm font-semibold text-white/70">
               {[
                 "25+ years",
                 "900+ projects",
                 "120 professionals",
                 "Delhi Â· Noida Â· Gurugram",
               ].map((chip) => (
-                <span key={chip} className="inline-flex items-center gap-2">
+                <span key={chip} className="inline-flex items-center gap-2 rounded-full border border-white/[.07] bg-white/[.035] px-3 py-2 backdrop-blur-sm">
                   <LuCheck className="text-sky-300" />
                   {chip}
                 </span>
               ))}
             </div>
           </div>
-          <div className="relative">
-            <div className="absolute -inset-4 rounded-[2rem] bg-sky-500/10 blur-2xl" />
+          <div className="relative z-10 mx-auto w-full max-w-[600px] lg:ml-auto">
+            <div className="absolute -inset-6 rounded-[2.5rem] bg-gradient-to-br from-sky-400/20 via-blue-500/10 to-transparent blur-2xl" />
+            <div className="absolute -inset-px rounded-[2rem] bg-gradient-to-br from-sky-200/50 via-white/10 to-blue-400/30 opacity-70" />
             <img
               src={containerImage.src}
               alt="Prefabricated cabin structure for a site office"
-              className="relative h-[360px] w-full rounded-[2rem] object-cover shadow-2xl sm:h-[460px]"
+              className="relative h-[340px] w-full rounded-[2rem] border-[6px] border-[#0b1530]/90 object-cover shadow-[0_35px_100px_-30px_rgba(0,0,0,.8)] sm:h-[430px] lg:h-[480px]"
             />
-            <div className="absolute -bottom-5 left-5 rounded-2xl border border-white/20 bg-[#111a36]/90 p-4 backdrop-blur">
-              <p className="font-bold">Made for your site</p>
-              <p className="mt-1 text-sm text-white/65">
-                Custom size Â· insulated Â· install-ready
-              </p>
+            <div className="absolute left-5 top-5 inline-flex items-center gap-2 rounded-full border border-white/20 bg-[#0b1530]/75 px-4 py-2 text-xs font-bold uppercase tracking-wider text-white shadow-lg backdrop-blur-md">
+              <LuShieldCheck className="size-4 text-sky-300" /> Built to your specification
+            </div>
+            <div className="absolute -bottom-5 left-5 right-5 flex items-center justify-between gap-4 rounded-2xl border border-white/15 bg-[#0b1530]/85 p-4 shadow-[0_18px_45px_rgba(0,0,0,.35)] backdrop-blur-xl sm:left-7 sm:right-7 sm:p-5">
+              <div>
+                <p className="font-bold">Made for your site</p>
+                <p className="mt-1 text-sm text-white/65">
+                  Custom size Â· insulated Â· install-ready
+                </p>
+              </div>
+              <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-sky-300/20 to-blue-400/10 text-sky-200 ring-1 ring-white/10">
+                <LuRuler className="size-5" />
+              </span>
             </div>
           </div>
         </div>
@@ -632,7 +656,7 @@ export default function PortaCabinsPage() {
             title="Need a Porta Cabin in Delhi NCR?"
             description="Tell us how you will use it and the size you need. We will get back to you to plan a free site visit and share a clear quote."
           />
-          <div className="rounded-3xl bg-white p-6 text-ink shadow-2xl sm:p-8">
+          <div className="rounded-3xl bg-surface p-6 text-ink shadow-2xl sm:p-8">
             <InnerPageEnquiryForm
               title="Request a Free Quote"
               submitLabel="Request Free Quote"

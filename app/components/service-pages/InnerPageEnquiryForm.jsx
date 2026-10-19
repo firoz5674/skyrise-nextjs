@@ -13,7 +13,7 @@ const emptyForm = {
   website: "",
 }
 
-const inputClass = "w-full rounded-xl border border-line bg-page px-4 py-3 font-normal text-ink outline-none transition-colors focus:border-brand"
+const inputClass = "w-full rounded-xl text-md border border-line bg-page px-4 py-3 font-normal text-ink outline-none transition-colors focus:border-brand"
 
 export default function InnerPageEnquiryForm({
   title = "Request a free site visit",
