@@ -42,7 +42,7 @@ export const serviceMenuGroups = [
     items: [
       ["Container Homes", "/services/container-homes", "container"],
       ["Prefabricated Modular Houses", "/services/prefabricated-modular-houses", "blocks"],
-      ["Porta Cabins", "/services/porta-cabins", "warehouse"],
+      ["Porta Cabins", "/services/porta-cabin-manufacturers-in-delhi", "warehouse"],
       ["PUF Insulated Panels", "/services/puf-insulated-panels", "layers"],
       ["Aerocon Prefabricated Structures", "/services/aerocon-prefabricated-structures", "building"],
     ],

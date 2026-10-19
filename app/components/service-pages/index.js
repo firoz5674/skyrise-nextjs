@@ -7,7 +7,6 @@ import TensileCarParkingStructures from "./tensile-car-parking-structures"
 import TensileCanopiesAndGazebos from "./tensile-canopies-and-gazebos"
 import ContainerHomes from "./container-homes"
 import PrefabricatedModularHouses from "./prefabricated-modular-houses"
-import PortaCabins from "./porta-cabins"
 import PufInsulatedPanels from "./puf-insulated-panels"
 import AeroconPrefabricatedStructures from "./aerocon-prefabricated-structures"
 
@@ -21,7 +20,6 @@ export const unfinishedServicePages = {
   "tensile-canopies-and-gazebos": TensileCanopiesAndGazebos,
   "container-homes": ContainerHomes,
   "prefabricated-modular-houses": PrefabricatedModularHouses,
-  "porta-cabins": PortaCabins,
   "puf-insulated-panels": PufInsulatedPanels,
   "aerocon-prefabricated-structures": AeroconPrefabricatedStructures,
 }

@@ -8,7 +8,6 @@ export const servicePageSlugs = [
   "tensile-canopies-and-gazebos",
   "container-homes",
   "prefabricated-modular-houses",
-  "porta-cabins",
   "puf-insulated-panels",
   "aerocon-prefabricated-structures",
 ]

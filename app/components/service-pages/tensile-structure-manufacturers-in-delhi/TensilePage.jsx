@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import { useState } from "react"
 import {
@@ -24,6 +24,8 @@ import {
 } from "react-icons/lu"
 import { images } from "../../../data/images"
 import { tensileStructureManufacturersInDelhi } from "../../../data/tensile"
+import InnerPageEnquiryForm from "../InnerPageEnquiryForm"
+import InnerPageEnquiryIntro from "../InnerPageEnquiryIntro"
 
 const benefits = [
   {
@@ -250,7 +252,7 @@ const related = [
   [
     "Porta Cabins",
     "Quick, movable cabins for site offices and shops.",
-    "/services/porta-cabins",
+    "/services/porta-cabin-manufacturers-in-delhi",
   ],
   [
     "PUF Insulated Panels",
@@ -293,69 +295,8 @@ function SectionTitle({ eyebrow, title, text, light = false }) {
 
 export default function TensilePage() {
   const [openFaq, setOpenFaq] = useState(0)
-  const [form, setForm] = useState({
-    name: "",
-    mobile: "",
-    city: "",
-    structureType: "",
-    area: "",
-    message: "",
-    website: "",
-  })
-  const [formState, setFormState] = useState("idle")
-  const [formError, setFormError] = useState("")
-  const [formErrors, setFormErrors] = useState({})
-
-  const updateForm = (event) => {
-    const { name, value } = event.target
-    setForm((current) => ({ ...current, [name]: value }))
-    setFormErrors((current) => ({ ...current, [name]: "" }))
-  }
-  const submitForm = async (event) => {
-    event.preventDefault()
-    const errors = {
-      name: form.name.trim() ? "" : "Please enter your name.",
-      mobile: !form.mobile.trim()
-        ? "Please enter your phone number."
-        : form.mobile.replace(/\D/g, "").length < 10
-          ? "Please enter a valid phone number."
-          : "",
-      message: form.message.trim() ? "" : "Please enter a message.",
-    }
-    setFormErrors(errors)
-    if (Object.values(errors).some(Boolean)) return
-    setFormState("sending")
-    setFormError("")
-    try {
-      const response = await fetch("/api/inner-pages-enquiry", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
-      })
-      const result = await response.json()
-      if (!response.ok || !result.success)
-        throw new Error(
-          result.message || "We could not send your request. Please try again.",
-        )
-      setFormState("success")
-      setForm({
-        name: "",
-        mobile: "",
-        city: "",
-        structureType: "",
-        area: "",
-        message: "",
-        website: "",
-      })
-      setFormErrors({})
-    } catch (error) {
-      setFormError(error.message)
-      setFormState("error")
-    }
-  }
-
   return (
-    <main className="relative overflow-hidden pt-24 lg:pt-32">
+    <main className="service-page-content relative overflow-hidden pt-24 lg:pt-32">
       <section className="container-page relative pb-16 pt-8 lg:pb-24 lg:pt-12">
         <div
           aria-hidden
@@ -363,7 +304,7 @@ export default function TensilePage() {
         />
         <div className="relative grid items-center gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:gap-14">
           <div>
-            <p className="eyebrow mb-5">Tensile structures · Delhi NCR</p>
+            <p className="eyebrow mb-5">Tensile structures Â· Delhi NCR</p>
             <h1
               style={{ lineHeight: "calc(0.98em + 10px)" }}
               className="text-gradient text-[clamp(2.6rem,6.5vw,4.4rem)] font-extrabold"
@@ -395,7 +336,7 @@ export default function TensilePage() {
                 "25+ years",
                 "900+ projects",
                 "120 professionals",
-                "Delhi · Noida · Gurugram",
+                "Delhi Â· Noida Â· Gurugram",
               ].map((stat) => (
                 <span
                   key={stat}
@@ -698,7 +639,7 @@ export default function TensilePage() {
                 Get a clear project estimate
               </h3>
               <p className="mt-4 leading-relaxed text-white/80">
-                We’ll measure the span, discuss fabric options and explain the
+                Weâ€™ll measure the span, discuss fabric options and explain the
                 frame and foundation requirements before sharing your quote.
               </p>
               <a
@@ -717,7 +658,7 @@ export default function TensilePage() {
           <SectionTitle
             eyebrow="Local team, regional reach"
             title="Tensile Structure Installation Across Delhi NCR"
-            text="From our office in New Delhi, we install tensile structures across the region. Tell us about your location and we’ll discuss your site requirements."
+            text="From our office in New Delhi, we install tensile structures across the region. Tell us about your location and weâ€™ll discuss your site requirements."
           />
           <div className="mt-8 grid gap-3 sm:grid-cols-3">
             {["Delhi", "Noida and Greater Noida", "Gurugram (Gurgaon)"].map(
@@ -775,7 +716,7 @@ export default function TensilePage() {
         <div className="container-page">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
             <SectionTitle
-              eyebrow="See what’s possible"
+              eyebrow="See whatâ€™s possible"
               title="Tensile Structure Ideas"
               text="A look at tensile shades, roofs and outdoor structures for different settings."
             />
@@ -873,206 +814,18 @@ export default function TensilePage() {
           className="pointer-events-none blueprint-grid absolute inset-0 opacity-30"
         />
         <div className="container-page relative z-10 grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
-          <div className="flex flex-col justify-center">
-            <p className="eyebrow !text-sky-300">Start with a site visit</p>
-            <h2 className="mt-3 font-display text-[clamp(2.2rem,4.5vw,4rem)] leading-[1.23] font-bold">
-              Planning a Tensile Structure in Delhi NCR?
-            </h2>
-            <p className="mt-5 max-w-xl text-lg leading-relaxed text-white/70">
-              Tell us about your site. We’ll get back to you to plan a free site
-              visit and share a clear quote.
-            </p>
-            <div className="mt-8 space-y-4 text-white/80">
-              <a
-                href="tel:+919312148849"
-                className="flex items-center gap-3 transition-colors hover:text-sky-300"
-              >
-                <LuPhone className="size-5 text-sky-300" />
-                93121 48849
-              </a>
-              <a
-                href="mailto:skyrise30@gmail.com"
-                className="flex items-center gap-3 transition-colors hover:text-sky-300"
-              >
-                <LuMapPin className="size-5 text-sky-300" />C 373 Ground Floor,
-                DDA Flats, Jasola Vihar, Sarita Vihar, New Delhi 110025
-              </a>
-            </div>
-          </div>
+          <InnerPageEnquiryIntro
+            eyebrow="Start with a site visit"
+            title="Planning a Tensile Structure in Delhi NCR?"
+            description="Tell us about your site. We’ll get back to you to plan a free site visit and share a clear quote."
+          />
           <div className="rounded-[2rem] bg-surface p-6 text-ink shadow-[0_30px_90px_-35px_rgba(14,165,233,.4)] sm:p-8">
-            <h3 className="font-display text-2xl font-bold">
-              Request a free site visit
-            </h3>
-            <p className="mt-2 text-md text-soft">
-              Share a few details and our team will contact you.
-            </p>
-            {formState === "success" ? (
-              <div
-                role="status"
-                className="mt-8 rounded-2xl border border-emerald-500/30 bg-emerald-500/10 p-6"
-              >
-                <span className="grid size-11 place-items-center rounded-full bg-emerald-500 text-white">
-                  <LuCheck className="size-6" />
-                </span>
-                <p className="mt-4 font-display text-xl font-bold">
-                  Thank you. Your request is sent.
-                </p>
-                <p className="mt-2 text-soft">
-                  Our team will contact you soon to discuss your site visit.
-                </p>
-                <button
-                  type="button"
-                  onClick={() => {
-                    setForm({
-                      name: "",
-                      mobile: "",
-                      city: "",
-                      structureType: "",
-                      area: "",
-                      message: "",
-                      website: "",
-                    })
-                    setFormError("")
-                    setFormErrors({})
-                    setFormState("idle")
-                  }}
-                  className="mt-6 inline-flex items-center justify-center rounded-full bg-brand-gradient px-5 py-3 font-semibold text-white transition-transform hover:-translate-y-0.5"
-                >
-                  Submit another response
-                </button>
-              </div>
-            ) : (
-              <form
-                noValidate
-                onSubmit={submitForm}
-                className="mt-6 grid gap-4 sm:grid-cols-2"
-              >
-                <input
-                  name="website"
-                  value={form.website}
-                  onChange={updateForm}
-                  tabIndex={-1}
-                  autoComplete="off"
-                  aria-hidden="true"
-                  className="absolute -left-[9999px] h-0 w-0 opacity-0"
-                />
-                <label className="grid gap-1.5 text-sm font-semibold">
-                  Name
-                  <input
-                    name="name"
-                    value={form.name}
-                    onChange={updateForm}
-                    autoComplete="name"
-                    className="w-full rounded-xl border border-line bg-page px-4 py-3 font-normal text-ink outline-none transition-colors focus:border-brand"
-                    placeholder="Your name"
-                  />
-                  {formErrors.name && (
-                    <span
-                      role="alert"
-                      className="text-xs font-medium text-red-600"
-                    >
-                      {formErrors.name}
-                    </span>
-                  )}
-                </label>
-                <label className="grid gap-1.5 text-sm font-semibold">
-                  Phone
-                  <input
-                    type="tel"
-                    name="mobile"
-                    value={form.mobile}
-                    onChange={updateForm}
-                    autoComplete="tel"
-                    pattern="[0-9+() -]{10,18}"
-                    className="w-full rounded-xl border border-line bg-page px-4 py-3 font-normal text-ink outline-none transition-colors focus:border-brand"
-                    placeholder="Your phone number"
-                  />
-                  {formErrors.mobile && (
-                    <span
-                      role="alert"
-                      className="text-xs font-medium text-red-600"
-                    >
-                      {formErrors.mobile}
-                    </span>
-                  )}
-                </label>
-                <label className="grid gap-1.5 text-sm font-semibold">
-                  City
-                  <input
-                    required
-                    name="city"
-                    value={form.city}
-                    onChange={updateForm}
-                    className="w-full rounded-xl border border-line bg-page px-4 py-3 font-normal text-ink outline-none transition-colors focus:border-brand"
-                    placeholder="e.g. Delhi"
-                  />
-                </label>
-                <label className="grid gap-1.5 text-sm font-semibold">
-                  Structure type
-                  <select
-                    name="structureType"
-                    value={form.structureType}
-                    onChange={updateForm}
-                    className="w-full rounded-xl border border-line bg-page px-4 py-3 font-normal text-ink outline-none transition-colors focus:border-brand"
-                  >
-                    <option value="">Select Service</option>
-                    {structures.map(({ title }) => (
-                      <option key={title} value={title}>
-                        {title}
-                      </option>
-                    ))}
-                  </select>
-                </label>
-                <label className="grid gap-1.5 text-sm font-semibold sm:col-span-2">
-                  Approx. area in sq ft
-                  <input
-                    inputMode="numeric"
-                    name="area"
-                    value={form.area}
-                    onChange={updateForm}
-                    className="w-full rounded-xl border border-line bg-page px-4 py-3 font-normal text-ink outline-none transition-colors focus:border-brand"
-                    placeholder="Approximate area"
-                  />
-                </label>
-                <label className="grid gap-1.5 text-sm font-semibold sm:col-span-2">
-                  Message
-                  <textarea
-                    name="message"
-                    rows={3}
-                    value={form.message}
-                    onChange={updateForm}
-                    className="w-full resize-y rounded-xl border border-line bg-page px-4 py-3 font-normal text-ink outline-none transition-colors focus:border-brand"
-                    placeholder="Tell us a little about your site"
-                  />
-                  {formErrors.message && (
-                    <span
-                      role="alert"
-                      className="text-xs font-medium text-red-600"
-                    >
-                      {formErrors.message}
-                    </span>
-                  )}
-                </label>
-                {formError && (
-                  <p
-                    role="alert"
-                    className="text-sm font-medium text-red-500 sm:col-span-2"
-                  >
-                    {formError}
-                  </p>
-                )}
-                <button
-                  type="submit"
-                  disabled={formState === "sending"}
-                  className="flex items-center justify-center rounded-xl bg-brand-gradient px-5 py-3.5 font-semibold text-white transition-transform hover:-translate-y-0.5 disabled:cursor-wait disabled:opacity-70 sm:col-span-2"
-                >
-                  {formState === "sending"
-                    ? "Sending request…"
-                    : "Request Free Site Visit"}
-                  <LuArrowRight className="ml-2 text-[20px]" />
-                </button>
-              </form>
-            )}
+            <InnerPageEnquiryForm
+              categories={structures.map(({ title }) => title)}
+              categoryLabel="Structure type"
+              categoryPlaceholder="Select service"
+              messagePlaceholder="Tell us a little about your site"
+            />
           </div>
         </div>
       </section>

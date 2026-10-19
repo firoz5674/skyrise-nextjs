@@ -14,5 +14,5 @@ export default async function ServiceUnderConstruction({ params }) {
   const { serviceSlug } = await params
   const ServicePage = unfinishedServicePages[serviceSlug]
   if (!servicePageSlugs.includes(serviceSlug) || !ServicePage) notFound()
-  return <ServicePage />
+  return <div className="service-page-content"><ServicePage /></div>
 }

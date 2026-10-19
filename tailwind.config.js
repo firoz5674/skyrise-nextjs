@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontSize: {
+        md: ["1rem", { lineHeight: "1.5rem" }],
+      },
       fontFamily: {
         display: [
           '"Bricolage Grotesque"',
