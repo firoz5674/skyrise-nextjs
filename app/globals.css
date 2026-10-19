@@ -111,7 +111,7 @@
     padding-block: clamp(4rem, 8vw, 4rem);
   }
   .service-page-content p:not(.eyebrow) {
-    @apply text-sm;
+    @apply text-md;
   }
   .container-page {
     width: 100%;

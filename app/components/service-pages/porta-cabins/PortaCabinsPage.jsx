@@ -635,7 +635,7 @@ export default function PortaCabinsPage() {
                 <summary className="cursor-pointer pr-4 font-display font-bold text-ink">
                   {question}
                 </summary>
-                <p className="mt-3 leading-relaxed text-soft">{answer}</p>
+                <p className="mt-3 leading-relaxed text-soft text-md">{answer}</p>
               </details>
             ))}
           </div>
